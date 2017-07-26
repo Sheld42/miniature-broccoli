@@ -23,7 +23,9 @@ namespace HardwareID
                 _publicKey.Exponent = File.ReadAllBytes("exp.bin");
                 _publicKey.Modulus = File.ReadAllBytes("Modulus.bin");
             }
-            catch { }
+            catch {
+                MessageBox.Show("Не найдены файлы для проверки лицензии");
+            }
         }
         
         public string getUniqueID(string drive)
