@@ -32,7 +32,6 @@ namespace Autopost
                 if (rsa.Check_Only())
                 {
                     time.Stop();
-                    MessageBox.Show(time.ElapsedMilliseconds.ToString());
                     if (5000 < time.ElapsedMilliseconds)
                      Application.Run(new License()); 
                     else
