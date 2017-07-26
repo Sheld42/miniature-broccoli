@@ -52,7 +52,7 @@ namespace Autopost.Forms
                 FinText = FinText.Replace("\r\n", "\"\r\nEVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13\r\nEVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"");
                 FinText = FinText + "\"";
                 //MessageBox.Show(FinPic);
-               // MessageBox.Show(FinText);
+                //MessageBox.Show(FinText);
             }
             else
             {
