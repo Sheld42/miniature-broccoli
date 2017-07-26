@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HardwareID;
+using System.Diagnostics;
 namespace Autopost
 {
     static class Program
@@ -25,8 +26,18 @@ namespace Autopost
             }
             catch
             {
+                Stopwatch time = new Stopwatch();
+                time.Reset();
+                time.Start();
                 if (rsa.Check_Only())
-                    Application.Run(new Welcome());
+                {
+                    time.Stop();
+                    MessageBox.Show(time.ElapsedMilliseconds.ToString());
+                    if (5000 < time.ElapsedMilliseconds)
+                     Application.Run(new License()); 
+                    else
+                        Application.Run(new Welcome());
+                }
                 else
                     Application.Run(new License());
             }
