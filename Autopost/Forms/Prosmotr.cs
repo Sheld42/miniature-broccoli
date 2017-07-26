@@ -125,7 +125,7 @@ namespace Autopost.Forms
             {                                   //FACEBOOK
 
                 string pikcha;
-                if (FinPic.Length > 1)
+                if (FinPic != null)
                     pikcha = "TAG POS=1 TYPE=INPUT:FILE ATTR=ID:js_* CONTENT=\"" + FinPic + "\"" + System.Environment.NewLine;
                 else
                     pikcha = "";
@@ -163,7 +163,7 @@ namespace Autopost.Forms
                 "SET !REPLAYSPEED FAST" + System.Environment.NewLine;
 
 
-                MessageBox.Show(Imac_text);
+                //MessageBox.Show(Imac_text);
 
                 File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", string.Empty, Encoding.UTF8);
                 File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", Imac_text);

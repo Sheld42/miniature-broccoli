@@ -5,7 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AutopostBSO", "Autopost\AutopostBSO.csproj", "{F2DEF5A0-9C85-4465-91FC-08C31F1D79A1}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "AutopostBSO Install", "AutopostBSO Install\AutopostBSO Install.vdproj", "{1D771CFE-0C63-45A3-BFD1-7D37F876932D}"
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SetupAutopost", "SetupAutopost\SetupAutopost.vdproj", "{FA5B26D5-051B-4F51-A76F-E300FA13F724}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,8 +17,8 @@ Global
 		{F2DEF5A0-9C85-4465-91FC-08C31F1D79A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F2DEF5A0-9C85-4465-91FC-08C31F1D79A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F2DEF5A0-9C85-4465-91FC-08C31F1D79A1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1D771CFE-0C63-45A3-BFD1-7D37F876932D}.Debug|Any CPU.ActiveCfg = Debug
-		{1D771CFE-0C63-45A3-BFD1-7D37F876932D}.Release|Any CPU.ActiveCfg = Release
+		{FA5B26D5-051B-4F51-A76F-E300FA13F724}.Debug|Any CPU.ActiveCfg = Debug
+		{FA5B26D5-051B-4F51-A76F-E300FA13F724}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
