@@ -33,6 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -74,11 +75,21 @@
             this.textBox1.TabIndex = 4;
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(95, 109);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(162, 13);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "YaNeZnayuKak@Svyazatsa.exx";
+            // 
             // License
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(366, 129);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -100,5 +111,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label4;
     }
 }

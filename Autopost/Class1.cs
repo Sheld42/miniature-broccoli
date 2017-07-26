@@ -133,7 +133,7 @@ namespace HardwareID
             time.Stop();
      
             if(4000< time.ElapsedMilliseconds)
-                return str;
+                return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str.ToLower()))).Replace("-", String.Empty);
             return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", String.Empty);
         }
         public bool Check_Only()
