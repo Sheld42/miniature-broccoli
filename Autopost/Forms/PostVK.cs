@@ -106,7 +106,11 @@ namespace Autopost
         private void button1_Click(object sender, EventArgs e)      //Начать рассылку
         {
 
-            Post p = comboBox2.SelectedItem as Post;
+            Post p = new Post();
+            p.Text = Text;
+            p.Title = Title;
+            p.Picturl = Picturl;
+            p.Pictpath = Pictpath;
             Prosmotr newForm = new Prosmotr(p,1);
             newForm.ShowDialog();
 
@@ -117,7 +121,7 @@ namespace Autopost
         }
         private void textBox4_TextChanged(object sender, EventArgs e)   //text
         {
-            Text = textBox4.Text;
+            Text = textBox4.Text;            
         }
         private void textBox2_TextChanged(object sender, EventArgs e)   //picpath
         {

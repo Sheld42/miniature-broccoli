@@ -124,6 +124,11 @@ namespace Autopost.Forms
             else
             {                                   //FACEBOOK
 
+                string pikcha;
+                if (FinPic.Length > 1)
+                    pikcha = "TAG POS=1 TYPE=INPUT:FILE ATTR=ID:js_* CONTENT=\"" + FinPic + "\"" + System.Environment.NewLine;
+                else
+                    pikcha = "";
 
                 
 
@@ -149,15 +154,16 @@ namespace Autopost.Forms
                 "TAG POS=1 TYPE=TEXTAREA ATTR=NAME:xhpc_message_text CONTENT=\"" + FinText + '"' + System.Environment.NewLine +
                 "WAIT SECONDS = 8" + System.Environment.NewLine +
                 "TAG POS=1 TYPE=BUTTON ATTR=TXT:Удалить" + System.Environment.NewLine +
-                "WAIT SECONDS = 2" + System.Environment.NewLine +
-                "TAG POS=1 TYPE=INPUT:FILE ATTR=ID:js_* CONTENT=\"" + FinPic + "\"" + System.Environment.NewLine +
+                "WAIT SECONDS = 2" + System.Environment.NewLine  +
+                //"TAG POS=1 TYPE=INPUT:FILE ATTR=ID:js_* CONTENT=\"" + FinPic + "\"" + System.Environment.NewLine +
+                pikcha +
                 "WAIT SECONDS={{!VAR7}}" + System.Environment.NewLine +
                 "TAG POS=1 TYPE=BUTTON ATTR=TXT:Опубликовать" + System.Environment.NewLine +
                 "WAIT SECONDS=8" + System.Environment.NewLine +
                 "SET !REPLAYSPEED FAST" + System.Environment.NewLine;
 
 
-
+                MessageBox.Show(Imac_text);
 
                 File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", string.Empty, Encoding.UTF8);
                 File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", Imac_text);

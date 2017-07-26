@@ -28,12 +28,14 @@ namespace Autopost
                 OnPropertyChanged();
             }
         }
-        public string Text { get; set; }
+        public string Textpost { get; set; }
         public string Picturl { get; set; }
         public string Pictpath { get; set; }
         public List<Post> Posts { get; set; }
         public PostSelect()                         //Инициализация окна
         {
+            //Title = "";
+            Textpost = "";
             Posts = new List<Post>();
             InitializeComponent();
             CurrDir = Directory.GetCurrentDirectory();
@@ -61,7 +63,7 @@ namespace Autopost
         {
             Post NewPost = new Post();
             NewPost.Title = Title;
-            NewPost.Text = Text;
+            NewPost.Text =Textpost;
             NewPost.Picturl = Picturl;
             NewPost.Pictpath = Pictpath;
 
@@ -108,7 +110,11 @@ namespace Autopost
         private void button1_Click(object sender, EventArgs e)      //Начать рассылку
         {
 
-            Post p = comboBox2.SelectedItem as Post;
+            Post p = new Post();
+            p.Text = Textpost;
+            p.Title = Title;
+            p.Picturl = Picturl;
+            p.Pictpath = Pictpath;
             Prosmotr newForm = new Prosmotr(p,0);
             newForm.ShowDialog();
 
@@ -119,7 +125,7 @@ namespace Autopost
         }
         private void textBox4_TextChanged(object sender, EventArgs e)   //text
         {
-            Text = textBox4.Text;
+           Textpost = textBox4.Text;
         }
         private void textBox2_TextChanged(object sender, EventArgs e)   //picpath
         {
@@ -147,7 +153,7 @@ namespace Autopost
         private void button2_Click_1(object sender, EventArgs e)        //Кнопка Удаление поста
         {
             Post Selected = new Post();
-            Selected = Posts.Where(post => string.Equals(post.Text, Text)).FirstOrDefault();
+            Selected = Posts.Where(post => string.Equals(post.Text,Textpost)).FirstOrDefault();
             try
             {
                 Posts.Remove(Selected);
@@ -206,12 +212,13 @@ namespace Autopost
         private void button6_Click(object sender, EventArgs e)      //Кнопка Сохранение поста
         {
             Post Selected = new Post();
-            Selected = Posts.Where(post => string.Equals(post.Text, Text)).FirstOrDefault();
-            if (!Posts.Any(post => string.Equals(post.Text, Text) && string.Equals(post.Title, Title) && string.Equals(post.Picturl, Picturl) && string.Equals(post.Pictpath, Pictpath)))
+            Selected = Posts.Where(post => string.Equals(post.Text,Textpost)).FirstOrDefault();
+            if (!Posts.Any(post => string.Equals(post.Text,Textpost) && string.Equals(post.Title, Title) && string.Equals(post.Picturl, Picturl) && string.Equals(post.Pictpath, Pictpath)))
             {
                 try
                 {
                     int k = comboBox2.Items.Count;
+                    Pictpath = pictureBox1.ImageLocation;
                     AddPost();
                     SaveToJson();
                     LoadPosts();
