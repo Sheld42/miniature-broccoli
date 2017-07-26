@@ -23,7 +23,7 @@ namespace HardwareID
                 _publicKey.Exponent = File.ReadAllBytes("exp.bin");
                 _publicKey.Modulus = File.ReadAllBytes("Modulus.bin");
             }
-            catch { }
+            catch { MessageBox.Show("Файлы ключей повреждены либо отсутствуют.","Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Error); }
         }
         
         public string getUniqueID(string drive)
