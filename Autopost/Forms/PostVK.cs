@@ -168,7 +168,6 @@ namespace Autopost
 
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
-            //sidinezvezdi testo = new sidinezvezdi();
 
             //MessageBox.Show(testo.getUniqueID(""));
 
