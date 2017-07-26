@@ -9,6 +9,7 @@ using System.Management;
 using System.IO;
 using System.Linq;
 using System.Security.Cryptography;
+using System.Diagnostics;
 
 namespace HardwareID
 {
@@ -121,11 +122,18 @@ namespace HardwareID
         }
         public string get_hash()
         {
+            Stopwatch time = new Stopwatch();
+            time.Reset();
+            time.Start();
             MD5 md5 = new MD5CryptoServiceProvider();
             UnicodeEncoding byteConverter = new UnicodeEncoding();
             AssignPublicKey();
             string str = getUniqueID("") + RetrieveComputerProps();
-           // Console.WriteLine(str);
+            // Console.WriteLine(str);
+            time.Stop();
+     
+            if(4000< time.ElapsedMilliseconds)
+                return str;
             return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", String.Empty);
         }
         public bool Check_Only()
