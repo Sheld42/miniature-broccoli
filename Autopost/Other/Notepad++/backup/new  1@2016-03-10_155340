@@ -1,0 +1,13 @@
+Вы хотите рекламировать ваши товары и услуги?
+Примените АВТОСКРИПТ для своих проектов! И вам обеспечен быстрый приток заинтересованных посетителей.
+Все доступно: 
+ВЫ ОТДЫХАЕТЕ А ВАШ КОМПЬЮТЕР РАССЫЛАЕТ ОДНОВРЕМЕННО ПО ВСЕМ СОЦСЕТЯМ Фейсбук Вконтакте Одноклассники Google
+
+
+VERSION BUILD=8871104 RECORDER=FX
+TAB T=1
+URL GOTO=https://www.facebook.com/groups/332219990244904/
+TAG POS=1 TYPE=DIV ATTR=DATA-OFFSET-KEY:4nce1-0-0&&CLASS:_1mf<SP>_1mj&&TXT:
+TAG POS=1 TYPE=INPUT:FILE ATTR=NAME:composer_photo CONTENT=C:\Avtoskript\Img\4.png
+TAG POS=1 TYPE=DIV ATTR=DATA-OFFSET-KEY:4nce1-0-0&&CLASS:_1mf<SP>_1mj&&TXT:
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Опубликовать
