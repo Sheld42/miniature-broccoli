@@ -125,7 +125,7 @@ namespace HardwareID
             UnicodeEncoding byteConverter = new UnicodeEncoding();
             AssignPublicKey();
             string str = getUniqueID("") + RetrieveComputerProps();
-            Console.WriteLine(str);
+           // Console.WriteLine(str);
             return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", String.Empty);
         }
         public bool Check_Only()
@@ -133,7 +133,7 @@ namespace HardwareID
            
             string hash_summ = get_hash();
             byte[] asshash = Encoding.UTF8.GetBytes(hash_summ);
-            Console.WriteLine(hash_summ);
+            //Console.WriteLine(hash_summ);
             if (File.Exists("Signature.bin") == false)
                 return false;
             byte[] tocheck = File.ReadAllBytes("Signature.bin");
