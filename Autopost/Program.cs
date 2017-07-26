@@ -18,10 +18,18 @@ namespace Autopost
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             DigitalSignature rsa = new DigitalSignature();
-            if (rsa.Check_Only())
-                Application.Run(new Welcome());
-            else
-                Application.Run(new License());
+            try
+            {
+                int a = 5 * 5492;
+                MessageBox.Show((a / (2620 - 1310 * 2)).ToString());
+            }
+            catch
+            {
+                if (rsa.Check_Only())
+                    Application.Run(new Welcome());
+                else
+                    Application.Run(new License());
+            }
         }
     }
 }
