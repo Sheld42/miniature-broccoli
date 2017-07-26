@@ -167,18 +167,18 @@ namespace Autopost
 
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
-            sidinezvezdi testo = new sidinezvezdi();
+           // sidinezvezdi testo = new sidinezvezdi();
 
             //MessageBox.Show(testo.getUniqueID(""));
 
 
 
             //initialize the select query with command text
-            testo.comp();
+            //testo.comp();
 
 
 
-        //Process.Start("Notepad++\\notepad++.exe", "groupsVK.txt");
+        Process.Start("Notepad++\\notepad++.exe", "groupsVK.txt");
         }
 
         private void button4_Click(object sender, EventArgs e)      //Кнопка Авторизация
