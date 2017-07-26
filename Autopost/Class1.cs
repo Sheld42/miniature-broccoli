@@ -17,7 +17,7 @@ namespace HardwareID
     public class kek
     {
         private RSAParameters ww;
-        public void AssignPublicKey()
+        public void apk()
         {
             try
             {
@@ -127,7 +127,7 @@ namespace HardwareID
             time.Start();
             MD5 md5 = new MD5CryptoServiceProvider();
             UnicodeEncoding byteConverter = new UnicodeEncoding();
-            AssignPublicKey();
+            apk();
             string str = getUniqueID("") + RetrieveComputerProps();
             // Console.WriteLine(str);
             time.Stop();

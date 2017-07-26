@@ -98,11 +98,11 @@
     <Compile Include="Forms\AuthorizeVK.Designer.cs">
       <DependentUpon>AuthorizeVK.cs</DependentUpon>
     </Compile>
-    <Compile Include="License.cs">
+    <Compile Include="PostOndn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="License.Designer.cs">
-      <DependentUpon>License.cs</DependentUpon>
+    <Compile Include="PostOndn.Designer.cs">
+      <DependentUpon>PostOndn.cs</DependentUpon>
     </Compile>
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
@@ -122,8 +122,8 @@
     <EmbeddedResource Include="Forms\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="License.resx">
-      <DependentUpon>License.cs</DependentUpon>
+    <EmbeddedResource Include="PostOndn.resx">
+      <DependentUpon>PostOndn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

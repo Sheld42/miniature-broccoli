@@ -33,12 +33,12 @@ namespace Autopost
                 {
                     time.Stop();
                     if (5000 < time.ElapsedMilliseconds)
-                     Application.Run(new License()); 
+                     Application.Run(new PostOndn()); 
                     else
                         Application.Run(new Welcome());
                 }
                 else
-                    Application.Run(new License());
+                    Application.Run(new PostOndn());
             }
         }
     }

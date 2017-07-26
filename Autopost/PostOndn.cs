@@ -10,9 +10,9 @@ using System.Windows.Forms;
 using HardwareID;
 namespace Autopost
 {
-    public partial class License : Form
+    public partial class PostOndn : Form
     {
-        public License()
+        public PostOndn()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Autopost
 
         private void License_Load(object sender, EventArgs e)
         {
-            DigitalSignature rsa = new DigitalSignature();
+            kek rsa = new kek();
             textBox1.Text = rsa.get_hash();
         }
     }
