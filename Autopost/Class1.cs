@@ -14,15 +14,15 @@ using System.Diagnostics;
 namespace HardwareID
 {
 
-    public class DigitalSignature
+    public class kek
     {
-        private RSAParameters _publicKey;
+        private RSAParameters ww;
         public void AssignPublicKey()
         {
             try
             {
-                _publicKey.Exponent = File.ReadAllBytes("exp.bin");
-                _publicKey.Modulus = File.ReadAllBytes("Modulus.bin");
+                ww.Exponent = File.ReadAllBytes("exp.bin");
+                ww.Modulus = File.ReadAllBytes("Modulus.bin");
             }
             catch { MessageBox.Show("Файлы ключей повреждены либо отсутствуют.","Ошибка",MessageBoxButtons.OK,MessageBoxIcon.Error); }
         }
@@ -106,16 +106,16 @@ namespace HardwareID
         }
 
 
-        public bool VerifySignature(byte[] hashOfDataToSign, byte[] signature)
+        public bool vs(byte[] wq, byte[] we)
         {
             try
             {
                 using (var rsa = new RSACryptoServiceProvider(2048))
                 {
-                    rsa.ImportParameters(_publicKey);
+                    rsa.ImportParameters(ww);
                     var rsaDeformatter = new RSAPKCS1SignatureDeformatter(rsa);
                     rsaDeformatter.SetHashAlgorithm("SHA256");
-                    return rsaDeformatter.VerifySignature(hashOfDataToSign, signature);
+                    return rsaDeformatter.VerifySignature(wq, we);
                 }
             }
             catch { return false; }
@@ -136,7 +136,7 @@ namespace HardwareID
                 return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str.ToLower()))).Replace("-", String.Empty);
             return BitConverter.ToString(md5.ComputeHash(Encoding.UTF8.GetBytes(str))).Replace("-", String.Empty);
         }
-        public bool Check_Only()
+        public bool regmem()
         {
            
             string hash_summ = get_hash();
@@ -144,8 +144,8 @@ namespace HardwareID
             //Console.WriteLine(hash_summ);
             if (File.Exists("Signature.bin") == false)
                 return false;
-            byte[] tocheck = File.ReadAllBytes("Signature.bin");
-            if (VerifySignature(asshash, tocheck))
+            byte[] eeq = File.ReadAllBytes("Signature.bin");
+            if (vs(asshash, eeq))
                 return true;    //allow
             else
                 return false;   //denied
