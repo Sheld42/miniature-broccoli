@@ -13,8 +13,13 @@ using System.Diagnostics;
 
 namespace Autopost.Forms
 {
+    
+
+
     public partial class Prosmotr : Form
     {
+
+        public string datasource { get; set; }
         public static string SpliceText(string text, int lineLength)
         {
             return Regex.Replace(text, "(.{" + lineLength + "})", "$1" + '\n');
@@ -29,29 +34,35 @@ namespace Autopost.Forms
         }
         public Prosmotr(Post p, int flag)     // "\\n"
         {
+            datasource = Directory.GetCurrentDirectory();
             VK = flag;
             InitializeComponent();
             FinText = p.Text; //+ System.Environment.NewLine; //+ p.Picturl;
             textBox1.Text = FinText;
             
-            pictureBox1.ImageLocation = p.Pictpath;
+            
 
             if (VK == 1)
             {
+                datasource = datasource + "\\groupsVK.txt";
+                datasource = datasource.Replace("\\", "\\\\");
+                pictureBox1.ImageLocation = p.Picturl;
                 FinPic = p.Picturl;
-                FinText = FinText.Replace("\r\n", "\\nEVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13\\n");
-                MessageBox.Show(FinPic);
-                MessageBox.Show(FinText);
+                FinText = "EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"" + FinText;
+                FinText = FinText.Replace("\r\n", "\"\r\nEVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13\r\nEVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"");
+                FinText = FinText + "\"";
+                //MessageBox.Show(FinPic);
+               // MessageBox.Show(FinText);
             }
             else
             {
+                datasource = datasource + "\\groupsFace.txt";
+                datasource = datasource.Replace("\\", "\\\\");
+                pictureBox1.ImageLocation = p.Pictpath;
                 FinPic = p.Pictpath;
                 FinText = FinText.Replace("\r\n", "\\n");
             }
-            //.Replace("\\", "\\\\");
-            /*string datasource = Directory.GetCurrentDirectory();
-            datasource = datasource + "\\groupsFace.txt";*/
-            //MessageBox.Show("SET !DATASOURCE " + datasource + "\"");
+           
         }
         private void button2_Click(object sender, EventArgs e)
         {
@@ -65,8 +76,9 @@ namespace Autopost.Forms
             if (VK == 1)                        //VK
             {
 
-                string datasource = Directory.GetCurrentDirectory();
-                datasource = datasource + "\\groupsVK.txt";
+                
+
+                //MessageBox.Show(datasource);
 
                 Imac_text =
                     "VERSION BUILD=9030808 RECORDER=FX" + System.Environment.NewLine +
@@ -74,7 +86,7 @@ namespace Autopost.Forms
                     "SET !VAR8 EVAL(\"var randomNumber=Math.floor(Math.random()*1 + 1); randomNumber;\")" + System.Environment.NewLine +
                     "SET !VAR6 EVAL(\"var random=Math.floor(Math.random()*11 + 15); random;\")" + System.Environment.NewLine +
                     "SET !VAR7 EVAL(\"var random=Math.floor(Math.random()*2 + 15); random;\")" + System.Environment.NewLine +
-                    "SET !DATASOURCE C:\\AutoFB\\groupsVK.txt" + System.Environment.NewLine +
+                    "SET !DATASOURCE \"" + datasource + "\"" + System.Environment.NewLine +
                     "SET !DATASOURCE_COLUMNS 3" + System.Environment.NewLine +
                     "SET !LOOP 1 " + System.Environment.NewLine +
                     "SET !DATASOURCE_LINE {{!LOOP}}" + System.Environment.NewLine +
@@ -83,20 +95,26 @@ namespace Autopost.Forms
                     "EVENT TYPE = CLICK SELECTOR=\"#post_field\" BUTTON=0" + System.Environment.NewLine +
                     "WAIT SECONDS=2" + System.Environment.NewLine +
                     "SET !REPLAYSPEED MEDIUM" + System.Environment.NewLine +
-                    "EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=" + FinPic + "\"" + System.Environment.NewLine +
+                    "EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"" + FinPic + "\"" + System.Environment.NewLine +
                     "EVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13" + System.Environment.NewLine +
                     "EVENTS TYPE=KEYPRESS SELECTOR=#post_field KEYS=[8]" + System.Environment.NewLine +
                     "WAIT SECONDS=5" + System.Environment.NewLine +
                     "EVENTS TYPE = KEYPRESS SELECTOR =#post_field CHARS=\"a\" MODIFIERS=\"ctrl\"" + System.Environment.NewLine +
                     "WAIT SECONDS=1" + System.Environment.NewLine +
-                    "EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"" + //текст
+                   // "EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=\"" + FinText +
 
-                                                                           //"EVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13" +
-                                                                           //"EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=""
+                     FinText +
+                     System.Environment.NewLine +
+
+                    //"EVENT TYPE=KEYPRESS SELECTOR=#post_field KEY=13" +
+                    //"EVENTS TYPE=KEYPRESS SELECTOR=#post_field CHARS=""
                     "WAIT SECONDS = 9" + System.Environment.NewLine +
                     "TAG POS=1 TYPE=BUTTON ATTR=ID:send_post" + System.Environment.NewLine;
 
-
+                File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\VK.iim", string.Empty, Encoding.UTF8);
+                File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\VK.iim", Imac_text);
+                System.Threading.Thread.Sleep(1300);
+                Process.Start("Firefox\\1\\FirefoxPortable.exe", "imacros://run/?m=VK.iim");
 
 
 
@@ -105,8 +123,11 @@ namespace Autopost.Forms
 
             else
             {                                   //FACEBOOK
-                string datasource = Directory.GetCurrentDirectory();
-                datasource = datasource + "\\groupsFace.txt";
+
+
+                
+
+               // MessageBox.Show(datasource);
 
                 Imac_text =
                 "VERSION BUILD=8820413 RECORDER=FX" + System.Environment.NewLine +
@@ -118,7 +139,7 @@ namespace Autopost.Forms
                 "SET !VAR8 EVAL(\"var randomNumber=Math.floor(Math.random()*1 + 1); randomNumber;\")" + System.Environment.NewLine +
                 "SET !VAR6 EVAL(\"var random=Math.floor(Math.random()*11 + 15); random;\")" + System.Environment.NewLine +
                 "SET !VAR7 EVAL(\"var random=Math.floor(Math.random()*2 + 15); random;\")" + System.Environment.NewLine +
-                "SET !DATASOURCE " + datasource + "\"" + System.Environment.NewLine +
+                "SET !DATASOURCE \"" + datasource + "\""  + System.Environment.NewLine +
                 "SET !DATASOURCE_COLUMNS 3" + System.Environment.NewLine +
                 "SET !LOOP " + "1" + System.Environment.NewLine +
                 "SET !DATASOURCE_LINE {{!LOOP}}" + System.Environment.NewLine +

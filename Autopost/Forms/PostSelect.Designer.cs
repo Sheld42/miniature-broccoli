@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PostSelect));
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
@@ -43,8 +42,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button6 = new System.Windows.Forms.Button();
@@ -70,16 +67,6 @@
             this.textBox1.TabIndex = 8;
             this.textBox1.Text = "Введите имя";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(52, 286);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(202, 20);
-            this.textBox3.TabIndex = 3;
-            this.textBox3.Text = "Отключено";
-            this.textBox3.TextChanged += new System.EventHandler(this.textBox3_TextChanged);
             // 
             // textBox4
             // 
@@ -164,7 +151,7 @@
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(202, 20);
+            this.textBox10.Size = new System.Drawing.Size(210, 20);
             this.textBox10.TabIndex = 14;
             this.textBox10.TabStop = false;
             this.textBox10.Text = "1. Авторизация в FaceBook";
@@ -192,7 +179,7 @@
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(210, 20);
+            this.textBox6.Size = new System.Drawing.Size(218, 20);
             this.textBox6.TabIndex = 17;
             this.textBox6.TabStop = false;
             this.textBox6.Text = "3. Прикрепить изображение";
@@ -200,41 +187,13 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(52, 220);
+            this.button5.Location = new System.Drawing.Point(12, 220);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(80, 22);
             this.button5.TabIndex = 3;
             this.button5.Text = "Обзор";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.button5_Click);
-            // 
-            // textBox2
-            // 
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(52, 263);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(202, 20);
-            this.textBox2.TabIndex = 19;
-            this.textBox2.TabStop = false;
-            this.textBox2.Text = "Ссылка на картинку";
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox7
-            // 
-            this.textBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox7.Location = new System.Drawing.Point(52, 243);
-            this.textBox7.Multiline = true;
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(202, 20);
-            this.textBox7.TabIndex = 20;
-            this.textBox7.TabStop = false;
-            this.textBox7.Text = "ИЛИ";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox8
             // 
@@ -252,9 +211,9 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(191, 213);
+            this.pictureBox1.Location = new System.Drawing.Point(98, 220);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 50);
+            this.pictureBox1.Size = new System.Drawing.Size(193, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
@@ -277,8 +236,6 @@
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox8);
-            this.Controls.Add(this.textBox7);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.textBox6);
             this.Controls.Add(this.textBox11);
@@ -290,7 +247,6 @@
             this.Controls.Add(this.comboBox2);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -310,7 +266,6 @@
         private System.Windows.Forms.Button button1;
 
         private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.ComboBox comboBox2;
@@ -322,8 +277,6 @@
         private System.Windows.Forms.TextBox textBox11;
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button6;

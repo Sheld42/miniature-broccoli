@@ -129,6 +129,7 @@ namespace Autopost
             try
             {
                 pictureBox1.ImageLocation = textBox3.Text;
+                Picturl = textBox3.Text;
             }
             catch
             {
@@ -167,7 +168,6 @@ namespace Autopost
 
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
-           // sidinezvezdi testo = new sidinezvezdi();
 
             //MessageBox.Show(testo.getUniqueID(""));
 

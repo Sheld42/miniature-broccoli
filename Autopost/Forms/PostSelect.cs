@@ -54,7 +54,7 @@ namespace Autopost
             textBox1.Text = p.Title;
             textBox4.Text = p.Text;
             pictureBox1.ImageLocation = p.Pictpath;
-            textBox3.Text = p.Picturl;
+            //textBox3.Text = p.Picturl;
 
         }
         private void AddPost()              //Добавление поста в список (внутри памяти проги)
@@ -130,7 +130,7 @@ namespace Autopost
             //Picturl = textBox3.Text;
             try
             {
-                pictureBox1.ImageLocation = textBox3.Text;
+                //pictureBox1.ImageLocation = textBox3.Text;
             }
             catch
             {
