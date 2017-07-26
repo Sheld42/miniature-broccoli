@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://imacros/skin/common.css" type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://imacros/locale/labels.dtd" >
+
+<dialog id="wait_window" title="&imacros.wait.title;"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+	ondialogaccept="return onAccept();">
+
+  <script type="application/x-javascript"
+          src="chrome://imacros/content/wait.js"/>
+
+  <stack>
+    <description maxwidth="400"
+                 style="padding-left: 40px">
+          &imacros.wait.enter1;
+    </description>
+    <hbox align="center">
+      <image class="question-image"/>
+    </hbox>
+  </stack>
+  <groupbox>
+    <hbox align="center" pack="center">
+      <label value="&imacros.wait.enter2;"/>
+      <textbox id="imacros-wait-period" value="60" width="30"/>
+      <label value="&imacros.wait.sec;"/>
+    </hbox>
+  </groupbox>
+</dialog>

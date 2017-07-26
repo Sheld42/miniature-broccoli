@@ -1,0 +1,15 @@
+content   clickclean chrome/content/
+overlay   chrome://browser/content/browser.xul  chrome://clickclean/content/clickclean.xul
+
+skin	clickclean	classic/1.0	chrome/skin/
+
+style	chrome://global/content/customizeToolbar.xul	chrome://clickclean/skin/clickclean.css
+style	chrome://global/content/customizeToolbar.xul	chrome://clickclean/skin/mac/clickclean.css os=Darwin
+
+locale clickclean de-DE chrome/locale/de-DE/
+locale clickclean en-US chrome/locale/en-US/
+locale clickclean ru-RU chrome/locale/ru-RU/
+
+content clickclean-web chrome/web/ contentaccessible=yes
+
+

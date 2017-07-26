@@ -1,0 +1,25 @@
+﻿VERSION BUILD=8820413 RECORDER=FX
+SET !TIMEOUT 60
+SET !REPLAYSPEED FAST
+SET !ERRORIGNORE YES
+SET !ERRORCONTINUE YES
+TAB T = 1
+SET !VAR8 EVAL("var randomNumber=Math.floor(Math.random()*1 + 1); randomNumber;")
+SET !VAR6 EVAL("var random=Math.floor(Math.random()*11 + 15); random;")
+SET !VAR7 EVAL("var random=Math.floor(Math.random()*2 + 15); random;")
+SET !DATASOURCE C:\AutoFB\groupsFace.txt
+SET !DATASOURCE_COLUMNS 3
+SET !LOOP 1
+SET !DATASOURCE_LINE {{!LOOP}}
+WAIT SECONDS={{!VAR8}}
+URL GOTO={{!COL1}}
+WAIT SECONDS = {{!VAR7}}
+TAG POS=1 TYPE=TEXTAREA ATTR=NAME:xhpc_message_text CONTENT="Картинка с котом на хдд\n"
+WAIT SECONDS = 8
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Удалить
+WAIT SECONDS = 2
+TAG POS=1 TYPE=INPUT:FILE ATTR=ID:js_* CONTENT="C:\\Avtoskript\\2.jpg"
+WAIT SECONDS={{!VAR7}}
+TAG POS=1 TYPE=BUTTON ATTR=TXT:Опубликовать
+WAIT SECONDS=8
+SET !REPLAYSPEED FAST

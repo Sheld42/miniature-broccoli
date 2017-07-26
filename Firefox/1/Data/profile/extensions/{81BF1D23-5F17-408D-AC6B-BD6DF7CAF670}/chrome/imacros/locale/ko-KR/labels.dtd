@@ -1,0 +1,199 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.xul -->
+<!ENTITY imacros.alert.title "기록된 경고">
+
+<!-- labels for bookmark.xul -->
+<!ENTITY imacros.bookmark.title "iMacros 북마크 만들기">
+<!ENTITY imacros.bookmark.label.h1 "북마크 종류">
+<!ENTITY imacros.bookmark.label.h2 "북마크 추가:">
+<!ENTITY imacros.bookmark.label.h3 "이름:">
+<!ENTITY imacros.bookmark.label.h4 "URL:">
+<!ENTITY imacros.bookmark.radio.h1 "어느 곳에서나 작동: 마크로를 북마크 url에 포함">
+<!ENTITY imacros.bookmark.radio.h2 "로컬: 로컬 마크로 레퍼런스 추가">
+<!ENTITY imacros.bookmark.radio.h3 "Firefox 북마크에 추가">
+<!ENTITY imacros.bookmark.radio.h4 "클립보드로 카피 (컨트롤+V로 링크를 이메일에 넣음)">
+
+
+<!-- labels for clear.xul -->
+<!ENTITY imacros.clear.title "경고:">
+<!ENTITY imacros.clear.enter1 "FF 브라우저 캐쉬를 지움. 이것은 다음을 포함 모든 쿠키를 지웁니다. 계속하겠습니까?">
+
+<!-- labels for clickpanel.xul -->
+<!ENTITY imacros.clickpanel.title "&apos;클릭 모드&apos;를 선택하세요">
+<!ENTITY imacros.clickpanel.caption "링크가 어떻게 기록되는지 석택하세요:">
+<!ENTITY imacros.clickpanel.radio1 "최고 클릭 모드 자동적으로 선택하기">
+<!ENTITY imacros.clickpanel.textbox "어떤 웹 페이지에서는 자동 선택이 최고 옵션을 선택하지 않는 경우가 있습니다. 이 경우에 대비해 최고 옵션을 수동적으로 선택해 주십시오:">
+<!ENTITY imacros.clickpanel.radio2 "링크 이름 씀 (표준, 표시된 이름으로 링크를 알아냄)">
+<!ENTITY imacros.clickpanel.radio3 "링크 URL을 씀 (만약 2개의 링크가 똑같은 이름을 가지고 있다면, 이 옵션을 쓰세요)">
+<!ENTITY imacros.clickpanel.radio4 "완성적인 HTM 태그 쓰기">
+<!ENTITY imacros.clickpanel.radio5 "X/Y 위치 쓰기 (URL과 이름이 리플래이 도중 바뀐다면 유용)">
+
+<!-- labels for confirm.xul -->
+<!ENTITY imacros.confirm.title "기록된 확인">
+
+<!-- labels for edit.xul -->
+<!ENTITY imacros.edit.title "스텝 수정">
+
+<!-- labels for error.xul -->
+<!ENTITY imacros.error.title "오류">
+<!ENTITY imacros.error.line "이 줄에 오류:">
+
+<!-- labels for extract.xul -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "뽑은 텍스트">
+<!ENTITY imacros.extract.label.remark "주목: 이 팝업은 테스트용 입니다. IM이 커맨드라인에나 스크립트로 조정될 때에는 보이지 않습니다. 인터페이스. 만약 마크로를 수동적으로 작동하고 싶다면, SET !EXTRACT_TEST_POPUP NO 추가해서 팝업을 억제할 수 있습니다. 마크로 취소">
+
+<!-- labels for goto.xul -->
+<!ENTITY imacros.goto.title "새로운 웹 사이트로 이동">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.xul -->
+<!ENTITY imacros.jsbookmark.radio1 "작동하기">
+<!ENTITY imacros.jsbookmark.radio2 "#current.js로만 카피 (파일을 직접 보고 수동으로 작동하세요).">
+
+<!-- labels for keydlg1.xul -->
+<!ENTITY imacros.keydlg.title "iMacros 마스터 비밀번호">
+<!ENTITY imacros.keydlg.enter1 "마스터 비밀번호를 입력하세요:">
+<!ENTITY imacros.keydlg1.master "마스터 비밀번호가 저장되지 않았습니다. 기억되었을 뿐입니다 인터넷 마크로가 작동되고 있을때. 참고로 이것은 지정된 웹 사이트 비밀번호가 아닌 마스터 비밀번호로서, 암호화 된 마크로 비밀번호를 풀기 위한 것입니다.">
+
+<!-- labels for keydlg2.xul -->
+<!ENTITY imacros.keydlg2.re-enter "마스터 비밀번호를 다시 입력하세요:">
+<!ENTITY imacros.keydlg.checkbox.store "이 마스터 키를 저장">
+
+<!-- labels for keydlg3.xul -->
+<!ENTITY imacros.keydlg3.radio1 "저장된 마스터 비밀번호 쓰기">
+<!ENTITY imacros.keydlg3.radio2 "새로운 마스터 비밀번호를 입력하세요:">
+<!ENTITY imacros.keydlg3.key "/ 다시 키를 입력하세요:">
+
+<!-- labels for keydlg4.xul -->
+
+<!-- labels for keydlg5.xul -->
+<!ENTITY imacros.keydlg5.re-enter "마스터 비밀번호를 다시 입력하세요:">
+
+<!-- labels for keydlg6.xul -->
+<!ENTITY imacros.keydlg6.button.yes "네">
+<!ENTITY imacros.keydlg6.button.no "아니오">
+
+<!-- labels for loopwarning.xul -->
+<!ENTITY imacros.loopwarning.title "iMacros 경고">
+<!ENTITY imacros.loopwarning.enter1 "보통 PLAY 버튼에 LOOP 기능을 포함한 마크로를 시작했습니다. 이것은 마크로가 한번만 작동할 것을 뜻합니다. {{!LOOP}} 변수의 값은 1입니다.">
+<!ENTITY imacros.loopwarning.enter2 "루프로 작동할려면 LOOP 버튼을 써 마크로를 시작해야 합니다 (PLAY 버튼이 아닙니다).">
+
+<!-- labels for message.xul -->
+<!ENTITY imacros.message.title "메시지">
+<!ENTITY imacros.message.error "이 줄에 오류:">
+
+<!-- labels for options.xul -->
+<!ENTITY imacros.window.options "옵션">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "리플레이 속도:">
+<!ENTITY imacros.radio.fast "빠름">
+<!ENTITY imacros.radio.medium "중간">
+<!ENTITY imacros.radio.slow "느림">
+<!ENTITY imacros.label.or.use.set.r0 "(아니면 &apos;SET !REPLAYSPEED&apos;를 씀)">
+<!ENTITY imacros.label.timeout.limi1 "타임아웃 리밋 (초단위)">
+<!ENTITY imacros.label.or.use.set.t2 "(아니면 &apos;SET !TIMEOUT&apos;을 씀)">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "찾았을때 오브젝트로 스크롤">
+<!ENTITY imacros.checkbox.highlight4 "찾았을때 오브젝트를 하이라이트 함">
+<!ENTITY imacros.options.scripting.settings "JavaScript scripting settings">
+<!ENTITY imacros.checkbox.js5 "리플레이 도중 자바스크립트 표시">
+<!ENTITY imacros.button.open.click.5 "클릭 모드 패널 열기">
+<!ENTITY imacros.label.master.passw6 "마크로 비밀번호 암호화(256-비트)를 위한 마스터 비밀번호">
+<!ENTITY imacros.label.the.master.p7 "마스터 비밀번호는 모든 저장된 웹사이트 비밀번호를 암호화 할때, 그리고 풀때 사용됩니다. 웹사이트 비밀번호는 강한 암호화를 사용하고, 인터넷 마크로 안에 저장됩니다.">
+<!ENTITY imacros.label.do.not.encry9 "비밀번호를 암호화 하지 않음.">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "마스터 비밀번호를 입력하세요">
+<!ENTITY imacros.label.enter.a.tem12 "만약 저장하기 싫다면, 임시 마스터 비밀번호를 여기에 입력하세요. iMacros를 시작하고 웹사이트 비밀번호를 처음으로 사용할 때마다 다시 입력해야 합니다. 이것은 더 안전하지만, 편리하진 않습니다.">
+<!ENTITY imacros.label.encryption.16 "를 사용해 마크로에 있는 암호화를 바꿀수 있습니다.">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "폴더 마크로:">
+<!ENTITY imacros.label.folder.data17 "폴더 데이터 송신부:">
+<!ENTITY imacros.label.folder.down18 "폴더 다운로드:">
+<!ENTITY imacros.label.logs.events "이벤트 기록:">
+<!ENTITY imacros.checkbox.use.exte19 "외부 에디터 쓰기:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.xul -->
+<!ENTITY imacros.window.recorder "iMacros">
+<!ENTITY imacros.menuitem.remove "없애기">
+<!ENTITY imacros.menuitem.rename "개명하기">
+<!ENTITY imacros.menuitem.new.folder "새로운 폴더">
+<!ENTITY imacros.menuitem.addbookmark "북마크에 추가">
+<!ENTITY imacros.treecell.favorites "좋아하는 것">
+<!ENTITY imacros.button.rename "개명하기">
+<!ENTITY imacros.tab.play "플레이">
+<!ENTITY imacros.tab.rec "녹음">
+<!ENTITY imacros.tab.edit "수정">
+<!ENTITY imacros.button.play "플레이">
+<!ENTITY imacros.button.pause "포즈">
+<!ENTITY imacros.button.stop "중지">
+<!ENTITY imacros.label.repeat.macro "마크로 반복하기">
+<!ENTITY imacros.label.current "현재:">
+<!ENTITY imacros.label.max "최고:">
+<!ENTITY imacros.button.play.loop "플레이 (루프)">
+<!ENTITY imacros.button.record "녹음">
+<!ENTITY imacros.button.save "Save Macro As">
+<!ENTITY imacros.button.saveas "페이지를 지명하여 저장">
+<!ENTITY imacros.button.refresh "리프레시">
+<!ENTITY imacros.button.jump.to "뛰기">
+<!ENTITY imacros.button.back "백">
+<!ENTITY imacros.button.wait.during0 "플레이시 기다림">
+<!ENTITY imacros.button.del.cache.c1 "Del. Cache&amp;Cookies">
+<!ENTITY imacros.button.edit.macro "마크로 수정">
+<!ENTITY imacros.button.refresh.mac2 "마크로 목록 리프레시">
+<!ENTITY imacros.button.options "옵션">
+<!ENTITY imacros.label.imacros.for.3 "Firefox를 위한 iMacros">
+<!ENTITY imacros.label.home.page "홈페이지">
+<!ENTITY imacros.label.about.iopus "iMacros 사용자 포럼">
+<!ENTITY imacros.button.options.click "클릭 모드">
+<!ENTITY imacros.button.share.macro "마크로 공유">
+
+<!-- labels for save.xul -->
+<!ENTITY imacros.save.title "파일 저장">
+<!ENTITY imacros.save.name "이름:">
+<!ENTITY imacros.save.create "이곳에 창조함:">
+<!ENTITY imacros.save.favorites "좋아하는 것">
+<!ENTITY imacros.save.bookmark "북마크 다이알로그 열기">
+
+<!-- labels for share.xul -->
+<!ENTITY imacros.share.title "마크로/스크립트 공유하기 - 소셜 스크립팅">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros는 간단한 (긴) 링크에 마크로를 넣을수 있습니다. 이 링크를 사용해 마크로/스크립트를 3가지 방법으로 공유할 수 있습니다.">
+<!ENTITY imacros.share.label.h2 "1. 이 링크를 이메일, 블로그, 웹사이트에 넣음">
+<!ENTITY imacros.share.label.h3 "이 링크 문자 길이는 (num) 입니다. 만약 이 것이 의도된 사용에서 너무 길다면, Top Short URL Service를 쓰십시오">
+<!ENTITY imacros.share.label.h4 "2. 컴퓨터의 이메일 프로그램을 이용해 마크로 보내기">
+<!ENTITY imacros.share.label.h5 "3. 소셜 북마크 서비스에 추가 하기">
+
+<!-- labels for sidebar.xul -->
+<!ENTITY imacros.sidebar.recorder "녹음기">
+<!ENTITY imacros.button.af.local.test "Local Test">
+<!ENTITY imacros.label.af.idrone.test "Test for iDrone">
+<!ENTITY imacros.button.af.online.test "Online Test">
+<!ENTITY imacros.button.af.upload "Upload">
+
+
+<!-- labels for wait.xul -->
+<!ENTITY imacros.wait.title "기다림 파라미터">
+<!ENTITY imacros.wait.enter1 "재생 당시 얼마나 이 자리에서 기다리길 원합니까?">
+<!ENTITY imacros.wait.enter2 "기다리는 시간을 초단위로 입력해 주세요:">
+<!ENTITY imacros.wait.sec "초">
+
+<!-- common labels -->
+<!ENTITY imacros.button.ok "확인">
+<!ENTITY imacros.button.cancel "취소">
+<!ENTITY imacros.checkbox.display.this "이 메시지를 다음에 또 표시">
+<!ENTITY imacros.button.close "닫기">
+<!ENTITY imacros.button.help "도움">

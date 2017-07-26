@@ -1,0 +1,200 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.xul -->
+<!ENTITY imacros.alert.title "Recorded Alert">
+
+<!-- labels for bookmark.xul -->
+<!ENTITY imacros.bookmark.title "Utwórz zakładkę iMacros">
+<!ENTITY imacros.bookmark.label.h1 "Typ zakładki">
+<!ENTITY imacros.bookmark.label.h2 "Dodaj zakładkę do:">
+<!ENTITY imacros.bookmark.label.h3 "Nazwa:">
+<!ENTITY imacros.bookmark.label.h4 "Adres URL:">
+<!ENTITY imacros.bookmark.radio.h1 "Uruchamiaj wszędzie: dołącz makro w adresie URL">
+<!ENTITY imacros.bookmark.radio.h2 "Lokalnie: Dodaj odwołanie do swojego lokalnego makro">
+<!ENTITY imacros.bookmark.radio.h3 "Dodaj do zakładek Firefoksa">
+<!ENTITY imacros.bookmark.radio.h4 "Kopiuj do schowka (Ctrl+V wkleja odnośnik do e-maili)">
+
+
+<!-- labels for clear.xul -->
+<!ENTITY imacros.clear.title "Ostrzeżenie:">
+<!ENTITY imacros.clear.enter1 "Ta operacja wyczyści globalny bufor podręczny Firefoksa łącznie ze wszystkimi ciasteczkami. Czy chcesz kontynuować?">
+
+<!-- labels for clickpanel.xul -->
+<!ENTITY imacros.clickpanel.title "Wybierz &quot;Tryb kliknięć&quot;">
+<!ENTITY imacros.clickpanel.caption "Wybierz sposób zapisu odnośników:">
+<!ENTITY imacros.clickpanel.radio1 "Wybierz najlepszy tryb kliknięć automatycznie">
+<!ENTITY imacros.clickpanel.textbox "Na niektórych stronach internetowych automatyczny wybór nie może wybrać najlepszej opcji. W takim przypadku proszę wybrać tryb ręcznie.">
+<!ENTITY imacros.clickpanel.radio2 "Użyj nazwy odnośnika (standard identyfikuje odnośnik przez jego widoczna nazwę)">
+<!ENTITY imacros.clickpanel.radio3 "Użyj URL odnośnika (użyj tej opcji jeśli dwa odnośniki mają tę samą nazwę)">
+<!ENTITY imacros.clickpanel.radio4 "Użyj pełny znacznik HTM">
+<!ENTITY imacros.clickpanel.radio5 "Użyj pozycji X/Y (użyteczne jeśli odnośnik URL i nazwa są zmieniane pomiędzy dwoma odpowiedziami)">
+
+<!-- labels for confirm.xul -->
+<!ENTITY imacros.confirm.title "Recorded Confirm">
+
+<!-- labels for edit.xul -->
+<!ENTITY imacros.edit.title "Kroki edycji">
+
+<!-- labels for error.xul -->
+<!ENTITY imacros.error.title "Błąd">
+<!ENTITY imacros.error.line "Błąd w wierszu:">
+
+<!-- labels for extract.xul -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "Wyodrębniony tekst:">
+<!ENTITY imacros.extract.label.remark "Informacja: To jest okienko testowe. Nie jest ono wyświetlane gdy IM jest kontrolowane przez linię poleceń lub skrypt. Interfejs. Jeśli chcesz uruchomić makro ręcznie, możesz wyłączyć to okienko dodając SET !EXTRACT_TEST_POPUP NO do twojego makro">
+
+<!-- labels for goto.xul -->
+<!ENTITY imacros.goto.title "Przejdź do nowej witryny">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.xul -->
+<!ENTITY imacros.jsbookmark.radio1 "Uruchom">
+<!ENTITY imacros.jsbookmark.radio2 "Kopiuj tylko do #current.js (Można sprawdzić plik i uruchomić go ręcznie).">
+
+<!-- labels for keydlg1.xul -->
+<!ENTITY imacros.keydlg.title "iMacros - hasło główne">
+<!ENTITY imacros.keydlg.enter1 "Proszę wprowadzić hasło główne">
+<!ENTITY imacros.keydlg1.master "Nie ma hasła głównego. Jest ono zapamiętywane tylko w  czasie, gdy iMacros jest aktywne. Nie jest ono hasłem dla danej witryny, ale hasłem głównym używanym do szyfrowania i rozszyfrowywania haseł makra.">
+
+<!-- labels for keydlg2.xul -->
+<!ENTITY imacros.keydlg2.re-enter "Wprowadź ponownie hasło główne:">
+<!ENTITY imacros.keydlg.checkbox.store "Zapisz to hasło">
+
+<!-- labels for keydlg3.xul -->
+<!ENTITY imacros.keydlg3.radio1 "Użyj zapisanego klucza głównego">
+<!ENTITY imacros.keydlg3.radio2 "Wprowadź nowy klucz główny">
+<!ENTITY imacros.keydlg3.key "/ wprowadź ponownie klucz:">
+
+<!-- labels for keydlg4.xul -->
+
+<!-- labels for keydlg5.xul -->
+<!ENTITY imacros.keydlg5.re-enter "Wprowadź hasło główne:">
+
+<!-- labels for keydlg6.xul -->
+<!ENTITY imacros.keydlg6.button.yes "Tak">
+<!ENTITY imacros.keydlg6.button.no "Nie">
+
+<!-- labels for loopwarning.xul -->
+<!ENTITY imacros.loopwarning.title "iMacros - ostrzeżenia">
+<!ENTITY imacros.loopwarning.enter1 "You started a macro that contains LOOP functions with the normal PLAY button. This means the macro will run only once. The value of the {{!LOOP}} variable is 1.">
+<!ENTITY imacros.loopwarning.enter2 "Aby uruchomić makro w pętlach należy użyć przycisku &quot;Pętla&quot;.">
+
+<!-- labels for message.xul -->
+<!ENTITY imacros.message.title "Wiadomość">
+<!ENTITY imacros.message.error "Błąd w wierszu:">
+
+<!-- labels for options.xul -->
+<!ENTITY imacros.window.options "Opcje">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "Szybkość odtwarzania:">
+<!ENTITY imacros.radio.fast "Szybko">
+<!ENTITY imacros.radio.medium "Średnio">
+<!ENTITY imacros.radio.slow "Wolno">
+<!ENTITY imacros.label.or.use.set.r0 "(Lub użyj &apos;SET !REPLAYSPEED&apos;)">
+<!ENTITY imacros.label.timeout.limi1 "Limit czasu (s)">
+<!ENTITY imacros.label.or.use.set.t2 "(Lub użyj &apos;SET !TIMEOUT&apos;)">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "Po znalezieniu przejdź do obiektu">
+<!ENTITY imacros.checkbox.highlight4 "Po znalezieniu wyróżnij obiekt">
+<!ENTITY imacros.options.scripting.settings "Javascript scripting settings">
+<!ENTITY imacros.checkbox.js5 "Pokaż Javascript podczas odtwarzania">
+<!ENTITY imacros.button.open.click.5 "Otwórz panel trybu kliknięć">
+<!ENTITY imacros.label.master.passw6 "Hasło główne dla szyfrowania hasła makra (256-Bit)">
+<!ENTITY imacros.label.the.master.p7 "Hasło główne jest używane do szyfrowania i deszyfrowania wszystkich zapisanych haseł witryny. Hasła te są zaszyfrowane używając silnego szyfrowania i zapisane wewnątrz rozszerzenia.">
+<!ENTITY imacros.label.do.not.encry9 "Nie szyfruj haseł">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "Wprowadź hasło główne">
+<!ENTITY imacros.label.enter.a.tem12 "Jeśli nie chcesz zapisać hasła głównego wprowadź je tutaj. Hasło główne trzeba będzie wprowadzać za każdym uruchomieniem iMacros i użyć za pierwszym razem hasła witryny. Jest to bezpieczniejsze, ale mniej wygodne.">
+<!ENTITY imacros.label.encryption.16 "Szyfrowanie może być zmieniane w makrze za pomocą">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "Folder makr:">
+<!ENTITY imacros.label.folder.data17 "Folder źródeł danych:">
+<!ENTITY imacros.label.folder.down18 "Folder pobierania:">
+<!ENTITY imacros.label.logs.events "Dziennik zdarzeń:">
+<!ENTITY imacros.checkbox.use.exte19 "Użyj zewnętrznego edytora:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.xul -->
+<!ENTITY imacros.window.recorder "iMacros">
+<!ENTITY imacros.menuitem.remove "Usuń">
+<!ENTITY imacros.menuitem.rename "Zmień nazwę">
+<!ENTITY imacros.menuitem.new.folder "Nowy folder">
+<!ENTITY imacros.menuitem.addbookmark "Dodaj do zakładek">
+<!ENTITY imacros.treecell.favorites "Ulubione">
+<!ENTITY imacros.button.rename "Zmień nazwę">
+<!ENTITY imacros.tab.play "Odtwórz">
+<!ENTITY imacros.tab.rec "Zapisz">
+<!ENTITY imacros.tab.edit "Edytuj">
+<!ENTITY imacros.button.play "Odtwórz">
+<!ENTITY imacros.button.pause "Pauza">
+<!ENTITY imacros.button.stop "Zatrzymaj">
+<!ENTITY imacros.label.repeat.macro "Powtórz makro">
+<!ENTITY imacros.label.current "Aktualne:">
+<!ENTITY imacros.label.max "Maks.">
+<!ENTITY imacros.button.play.loop "Odtwórz (Pętla)">
+<!ENTITY imacros.button.record "Zapisz">
+<!ENTITY imacros.button.save "Save Macro As">
+<!ENTITY imacros.button.saveas "Zapisz stronę jako">
+<!ENTITY imacros.button.refresh "Odśwież">
+<!ENTITY imacros.button.jump.to "Przejdź do">
+<!ENTITY imacros.button.back "Wróć">
+<!ENTITY imacros.button.wait.during0 "Czekaj podczas odtwarzania">
+<!ENTITY imacros.button.del.cache.c1 "Usuń bufor i ciasteczka">
+<!ENTITY imacros.button.edit.macro "Edytuj makro">
+<!ENTITY imacros.button.refresh.mac2 "Odśwież listę makr">
+<!ENTITY imacros.button.options "Opcje">
+<!ENTITY imacros.label.imacros.for.3 "iMacros dla Firefoksa">
+<!ENTITY imacros.label.home.page "Strona domowa">
+<!ENTITY imacros.label.about.iopus "Forum iMacros">
+<!ENTITY imacros.button.options.click "Tryb klikania">
+<!ENTITY imacros.button.share.macro "Podziel sie makrem">
+
+<!-- labels for save.xul -->
+<!ENTITY imacros.save.title "Zapisz plik">
+<!ENTITY imacros.save.name "Nazwa:">
+<!ENTITY imacros.save.create "Zapisz w:">
+<!ENTITY imacros.save.favorites "Ulubione">
+<!ENTITY imacros.save.bookmark "Otwórz zakładki">
+
+<!-- labels for share.xul -->
+<!ENTITY imacros.share.title "Podziel się swoimi makrami/skryptami - Skrypty publiczne">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros może osadzać całe makro wewnątrz zwykłego (długiego) odnośnika. Można użyć tego odnośnika do podzielenia się makrem/skryptem używając trzech sposobów">
+<!ENTITY imacros.share.label.h2 "1. Skopiuj i wklej ten odnośnik do e-maila, blogu lub strony internetowej">
+<!ENTITY imacros.share.label.h3 "Ten odnośnik zawiera (num) znaków. Jeśli jest on dla ciebie za długi, użyj jednego z Top Short URL Services">
+<!ENTITY imacros.share.label.h4 "2. Wyślij makro za pomocą programu pocztowego">
+<!ENTITY imacros.share.label.h5 "3. Dodaj do usługi zakładek publicznych">
+
+
+<!-- labels for sidebar.xul -->
+<!ENTITY imacros.sidebar.recorder "Rejestrator">
+<!ENTITY imacros.button.af.local.test "Local Test">
+<!ENTITY imacros.label.af.idrone.test "Test for iDrone">
+<!ENTITY imacros.button.af.online.test "Online Test">
+<!ENTITY imacros.button.af.upload "Upload">
+
+
+<!-- labels for wait.xul -->
+<!ENTITY imacros.wait.title "Parametry oczekiwania">
+<!ENTITY imacros.wait.enter1 "Jak długo chcesz oczekiwać w tej pozycji podczas odtwarzania?">
+<!ENTITY imacros.wait.enter2 "Wprowadź czas oczekiwania:">
+<!ENTITY imacros.wait.sec "s">
+
+<!-- common lablels -->
+<!ENTITY imacros.button.ok "OK">
+<!ENTITY imacros.button.cancel "Anuluj">
+<!ENTITY imacros.checkbox.display.this "Wyświetlaj to ostrzeżenia za każdym razem">
+<!ENTITY imacros.button.close "Zamknij">
+<!ENTITY imacros.button.help "Pomoc">

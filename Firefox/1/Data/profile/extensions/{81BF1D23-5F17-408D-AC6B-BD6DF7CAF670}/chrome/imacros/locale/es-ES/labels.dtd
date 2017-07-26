@@ -1,0 +1,200 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.xul -->
+<!ENTITY imacros.alert.title "Alerta Grabada">
+
+<!-- labels for bookmark.xul -->
+<!ENTITY imacros.bookmark.title "Crear un iMacros favorito">
+<!ENTITY imacros.bookmark.label.h1 "Tipo de favorito">
+<!ENTITY imacros.bookmark.label.h2 "Agregar favorito a:">
+<!ENTITY imacros.bookmark.label.h3 "Nombre:">
+<!ENTITY imacros.bookmark.label.h4 "URL:">
+<!ENTITY imacros.bookmark.radio.h1 "Correr en todos lados: incluir macro en una url">
+<!ENTITY imacros.bookmark.radio.h2 "Local: Agregar referencia a su macro local">
+<!ENTITY imacros.bookmark.radio.h3 "Agregar a favoritos de Firefox">
+<!ENTITY imacros.bookmark.radio.h4 "Copiar (CTRL+V para pegar enlaces a correos)">
+
+
+<!-- labels for clear.xul -->
+<!ENTITY imacros.clear.title "Advertencia:">
+<!ENTITY imacros.clear.enter1 "Esto borrará el caché global de FF. Esto incluye borrar TODAS LAS COOKIES. ¿Desea continuar?">
+
+<!-- labels for clickpanel.xul -->
+<!ENTITY imacros.clickpanel.title "Seleccionar el &apos;Modo Clic&apos;">
+<!ENTITY imacros.clickpanel.caption "Seleccione como se graban los links:">
+<!ENTITY imacros.clickpanel.radio1 "Seleccionar el mejor modo de clic automáticamente">
+<!ENTITY imacros.clickpanel.textbox "En algunas páginas el modo de selección automática no es la mejor opción. En esos casos, por favor seleccione la opción manual:">
+<!ENTITY imacros.clickpanel.radio2 "Usar nombre del link (Estándard, identifica un link por su nombre visible)">
+<!ENTITY imacros.clickpanel.radio3 "Usar URL del link (Utilice esta opción si dos links tienen el mismo nombre)">
+<!ENTITY imacros.clickpanel.radio4 "Usar tag HTM completo">
+<!ENTITY imacros.clickpanel.radio5 "Usar posición X/Y (Útil si la URL de link y el nombre cambian en distintas ejecuciones)">
+
+<!-- labels for confirm.xul -->
+<!ENTITY imacros.confirm.title "Confirmación Grabada">
+
+<!-- labels for edit.xul -->
+<!ENTITY imacros.edit.title "Editar Pasos">
+
+<!-- labels for error.xul -->
+<!ENTITY imacros.error.title "Error">
+<!ENTITY imacros.error.line "Error en línea:">
+
+<!-- labels for extract.xul -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "Texto extraído:">
+<!ENTITY imacros.extract.label.remark "Comentario: Esta ventana emergentes es de prueba. No aparece cuando la mensajería instantánea es controlada por la línea de comando. Si desea correr el macro de forma manual, puede deshabilitar esta ventana agregando SET !EXTRACT_TEST_POPUP NO a tu macro">
+
+<!-- labels for goto.xul -->
+<!ENTITY imacros.goto.title "Saltar a nueva página web">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.xul -->
+<!ENTITY imacros.jsbookmark.radio1 "Correrlo">
+<!ENTITY imacros.jsbookmark.radio2 "Solo copialo en #current.js (Puedes explorar el archivo e iniciarlo manualmente).">
+
+<!-- labels for keydlg1.xul -->
+<!ENTITY imacros.keydlg.title "Contraseña Maestra de iMacros">
+<!ENTITY imacros.keydlg.enter1 "Por favor ingrese su contraseña maestra:">
+<!ENTITY imacros.keydlg1.master "La contraseña maestra NO se guarda. Solo se recuerda mientras los Macros de Internet estén activos. Note que esta no es la contraseña para un sitio específico, sino la contraseña maestra para desencriptar las contraseñas de los macros.">
+
+<!-- labels for keydlg2.xul -->
+<!ENTITY imacros.keydlg2.re-enter "Vuelva a ingresar su contraseña maestra aquí:">
+<!ENTITY imacros.keydlg.checkbox.store "Guardar esta clave maestra">
+
+<!-- labels for keydlg3.xul -->
+<!ENTITY imacros.keydlg3.radio1 "Utilizar clave maestra guardada">
+<!ENTITY imacros.keydlg3.radio2 "Ingresar nueva clave maestra:">
+<!ENTITY imacros.keydlg3.key "Vuelva a ingresar la clave:">
+
+<!-- labels for keydlg4.xul -->
+
+<!-- labels for keydlg5.xul -->
+<!ENTITY imacros.keydlg5.re-enter "Por favor vuelva a ingresar su contraseña maestra:">
+
+<!-- labels for keydlg6.xul -->
+<!ENTITY imacros.keydlg6.button.yes "Si">
+<!ENTITY imacros.keydlg6.button.no "No">
+
+<!-- labels for loopwarning.xul -->
+<!ENTITY imacros.loopwarning.title "Advertencia de iMacros">
+<!ENTITY imacros.loopwarning.enter1 "Ha ejecutado un macro que contiene un BUCLE con el botón normal de PLAY. Esto significa que el macro solo correrá una vez. El valor de la variable {{!LOOP}} es 1.">
+<!ENTITY imacros.loopwarning.enter2 "Debes ejecutar el macro con el bóton de BUCLE (no el de PLAY) para que corrar repetidamente">
+
+<!-- labels for message.xul -->
+<!ENTITY imacros.message.title "Mensaje">
+<!ENTITY imacros.message.error "Error en línea:">
+
+<!-- labels for options.xul -->
+<!ENTITY imacros.window.options "Opciones">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "Velocidad de Repetición:">
+<!ENTITY imacros.radio.fast "Rápido">
+<!ENTITY imacros.radio.medium "Medio">
+<!ENTITY imacros.radio.slow "Lento">
+<!ENTITY imacros.label.or.use.set.r0 "(O utilice &apos;SET !REPLAYSPEED&apos;)">
+<!ENTITY imacros.label.timeout.limi1 "Límite de Timeout (Segundos)">
+<!ENTITY imacros.label.or.use.set.t2 "(O utilice &apos;SET !TIMEOUT&apos;)">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "Desplazarse hasta el objeto al encontrarlo">
+<!ENTITY imacros.checkbox.highlight4 "Resaltar el objeto al encontrarlo">
+<!ENTITY imacros.options.scripting.settings "Javascript scripting settings">
+<!ENTITY imacros.checkbox.js5 "Mostrar Javascript durante la ejecución">
+<!ENTITY imacros.button.open.click.5 "Abrir Panel de Modo Clic">
+<!ENTITY imacros.label.master.passw6 "Contraseña Maestra para Encriptar Macros (256-Bit)">
+<!ENTITY imacros.label.the.master.p7 "La contraseña maestra se utiliza para encriptar y desencriptar todas las contraseñas de sitios guardadas. Las contraseñas de sitios están encriptadas usando encriptación fuerte y se guardan dentro de los macros de Internet.">
+<!ENTITY imacros.label.do.not.encry9 "No desencriptar contraseñas.">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "Ingrese Contraseña Maestra">
+<!ENTITY imacros.label.enter.a.tem12 "Ingrese una contraseña maestra temporal aquí si NO quiere guardarla. Necesitará volverla a ingresar cada vez que comience iMacros y utilizar la contraseña de un sitio la primera vez. Másseguro, pero menos práctico.">
+<!ENTITY imacros.label.encryption.16 "La encriptación puede cambiarse en el macro con">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "Carpeta de Macros">
+<!ENTITY imacros.label.folder.data17 "Carpeta de Fuentes:">
+<!ENTITY imacros.label.folder.down18 "Carpeta de Descargas:">
+<!ENTITY imacros.label.logs.events "Registro de Eventos:">
+<!ENTITY imacros.checkbox.use.exte19 "Utilizar editor externo:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.xul -->
+<!ENTITY imacros.window.recorder "iMacros">
+<!ENTITY imacros.menuitem.remove "Eliminar">
+<!ENTITY imacros.menuitem.rename "Cambiar Nombre">
+<!ENTITY imacros.menuitem.new.folder "Nueva Carpeta">
+<!ENTITY imacros.menuitem.addbookmark "Agregar a Favoritos">
+<!ENTITY imacros.treecell.favorites "Favoritos">
+<!ENTITY imacros.button.rename "Cambiar Nombre">
+<!ENTITY imacros.tab.play "Ejecutar">
+<!ENTITY imacros.tab.rec "Grabar">
+<!ENTITY imacros.tab.edit "Editar">
+<!ENTITY imacros.button.play "Ejecutar">
+<!ENTITY imacros.button.pause "Pausa">
+<!ENTITY imacros.button.stop "Detener">
+<!ENTITY imacros.label.repeat.macro "Repetir Macro">
+<!ENTITY imacros.label.current "Actual">
+<!ENTITY imacros.label.max "Max:">
+<!ENTITY imacros.button.play.loop "Ejecutar (Bucle)">
+<!ENTITY imacros.button.record "Grabar">
+<!ENTITY imacros.button.save "Save Macro As">
+<!ENTITY imacros.button.saveas "Guardar Página Como">
+<!ENTITY imacros.button.refresh "Actualizar">
+<!ENTITY imacros.button.jump.to "Saltar a">
+<!ENTITY imacros.button.back "Atrás">
+<!ENTITY imacros.button.wait.during0 "Esperar durante Ejecución">
+<!ENTITY imacros.button.del.cache.c1 "Borrar Caché y Cookies">
+<!ENTITY imacros.button.edit.macro "Editar Macro">
+<!ENTITY imacros.button.refresh.mac2 "Actualizar Lista de Macros">
+<!ENTITY imacros.button.options "Opciones">
+<!ENTITY imacros.label.imacros.for.3 "iMacros para Firefox">
+<!ENTITY imacros.label.home.page "Inicio">
+<!ENTITY imacros.label.about.iopus "Foro de iMacros">
+<!ENTITY imacros.button.options.click "Modo Clic">
+<!ENTITY imacros.button.share.macro "Compartir Macros">
+
+<!-- labels for save.xul -->
+<!ENTITY imacros.save.title "Guardar Archivo">
+<!ENTITY imacros.save.name "Nombre:">
+<!ENTITY imacros.save.create "Crear en:">
+<!ENTITY imacros.save.favorites "Favoritos">
+<!ENTITY imacros.save.bookmark "Abrir Cuadro de Favoritos">
+
+<!-- labels for share.xul -->
+<!ENTITY imacros.share.title "Comparte tus Macros/Scripts - Scripting Social">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros puede insertar el macro completo dentro de un simple link. Puedes utilizar este link para compartir el macro de tres formas:">
+<!ENTITY imacros.share.label.h2 "1. Copiar y pegar el link en un correo, blog o sitio web">
+<!ENTITY imacros.share.label.h3 "Este link tiene (num) caracteres de largo. Si te resulta muy largo, por favor utiliza uno de los Servicios de URL corta">
+<!ENTITY imacros.share.label.h4 "2. Enviar el macro utilizando una aplicación de correo en tu computadora">
+<!ENTITY imacros.share.label.h5 "3. Agregarlo a un servicio de marcadores sociales">
+
+
+<!-- labels for sidebar.xul -->
+<!ENTITY imacros.sidebar.recorder "Grabadora">
+<!ENTITY imacros.button.af.local.test "Local Test">
+<!ENTITY imacros.label.af.idrone.test "Test for iDrone">
+<!ENTITY imacros.button.af.online.test "Online Test">
+<!ENTITY imacros.button.af.upload "Upload">
+
+
+<!-- labels for wait.xul -->
+<!ENTITY imacros.wait.title "Parámetro de espera">
+<!ENTITY imacros.wait.enter1 "¿Cuánto tiempo quieres esperar en esta posición durante la ejecución?">
+<!ENTITY imacros.wait.enter2 "Por favor ingrese el tiempo de espera en segundos:">
+<!ENTITY imacros.wait.sec "seg">
+
+<!-- common labels -->
+<!ENTITY imacros.button.ok "Aceptar">
+<!ENTITY imacros.button.cancel "Cancelar">
+<!ENTITY imacros.checkbox.display.this "Mostrar este mensaje la próxima vez">
+<!ENTITY imacros.button.close "Cerrar">
+<!ENTITY imacros.button.help "Ayuda">

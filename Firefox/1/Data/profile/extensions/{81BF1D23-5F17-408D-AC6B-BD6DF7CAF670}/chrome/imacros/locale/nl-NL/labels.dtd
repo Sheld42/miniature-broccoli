@@ -1,0 +1,201 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.xul -->
+<!ENTITY imacros.alert.title "Opgenomen waarschuwing">
+
+<!-- labels for bookmark.xul -->
+<!ENTITY imacros.bookmark.title "Een iMacros-bladwijzer maken">
+<!ENTITY imacros.bookmark.label.h1 "Type bladwijzer">
+<!ENTITY imacros.bookmark.label.h2 "Bladwijzer toevoegen aan:">
+<!ENTITY imacros.bookmark.label.h3 "Naam:">
+<!ENTITY imacros.bookmark.label.h4 "URL:">
+<!ENTITY imacros.bookmark.radio.h1 "Overal draaien: macro in URL van bladwijzer opnemen">
+<!ENTITY imacros.bookmark.radio.h2 "Lokaal: referentie naar uw lokale macro opnemen">
+<!ENTITY imacros.bookmark.radio.h3 "Aan Firefox Bladwijzers toevoegen">
+<!ENTITY imacros.bookmark.radio.h4 "Naar Klembord kopiëren (CTRL+V om koppelingen naar e-mails op te nemen)">
+
+
+<!-- labels for clear.xul -->
+<!ENTITY imacros.clear.title "Waarschuwing:">
+<!ENTITY imacros.clear.enter1 "Dit zal de algemene FF browsercache opschonen. Dit houdt ook verwijdering van ALLE COOKIES in. Wilt u doorgaan?">
+
+
+<!-- labels for clickpanel.xul -->
+<!ENTITY imacros.clickpanel.title "Selecteer de &apos;Klikmodus&apos;">
+<!ENTITY imacros.clickpanel.caption "Selecteer hoe koppelingen worden opgenomen:">
+<!ENTITY imacros.clickpanel.radio1 "De beste klikmethode automatisch selecteren">
+<!ENTITY imacros.clickpanel.textbox "Op sommige webpagina&apos;s kan automatische selectie niet de beste optie selecteren. Selecteer in dat geval a.u.b. de beste optie handmatig:">
+<!ENTITY imacros.clickpanel.radio2 "Koppelingsnaam gebruiken (standaard, identificeert een koppeling aan een zichtbare naam)">
+<!ENTITY imacros.clickpanel.radio3 "Koppelings-URL gebruiken (gebruik deze optie als twee koppelingen dezelfde naam hebben)">
+<!ENTITY imacros.clickpanel.radio4 "Volledige HTM tag gebruiken">
+<!ENTITY imacros.clickpanel.radio5 "X/Y-positie gebruiken (nuttig als de URL van een koppeling en de naam wijzigen tussen twee vernieuwingen)">
+
+<!-- labels for confirm.xul -->
+<!ENTITY imacros.confirm.title "Opgenomen bevestiging">
+
+<!-- labels for edit.xul -->
+<!ENTITY imacros.edit.title "Stappen bewerken">
+
+<!-- labels for error.xul -->
+<!ENTITY imacros.error.title "Fout">
+<!ENTITY imacros.error.line "Fout in regel:">
+
+<!-- labels for extract.xul -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "Ingelezen tekst:">
+<!ENTITY imacros.extract.label.remark "Opmerking: dit pop-upvenster dient als test. Het verschijnt NIET wanneer IM wordt aangestuurd door de opdrachtregel op een script Interface. Als u de macro handmatig wilt draaien kunt u deze pop-up uitschakelen door SET !EXTRACT_TEST_POPUP NO toe te voegen aan uw macro">
+
+<!-- labels for goto.xul -->
+<!ENTITY imacros.goto.title "Naar nieuwe website springen">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.xul -->
+<!ENTITY imacros.jsbookmark.radio1 "Draaien">
+<!ENTITY imacros.jsbookmark.radio2 "Alleen kopiëren naar #current.js (u kunt het bestand inspecteren en handmatig starten)">
+
+<!-- labels for keydlg1.xul -->
+<!ENTITY imacros.keydlg.title "iMacros Hoofdwachtwoord">
+<!ENTITY imacros.keydlg.enter1 "Voer a.u.b. uw hoofdwachtwoord in:">
+<!ENTITY imacros.keydlg1.master "Het hoofdwachtwoord wordt NIET opgeslagen. Het wordt alleen maar onthouden gedurende de tijd dat iMacros actief is. Merk a.u.b. op dat dit niet het wachtwoord voor een specifieke website is, maar het hoofwachtwoord waarmee de versleutelde macrowachtwoorden worden gedecodeerd.">
+
+<!-- labels for keydlg2.xul -->
+<!ENTITY imacros.keydlg2.re-enter "Voer uw hoofdwachtwoord opnieuw in:">
+<!ENTITY imacros.keydlg.checkbox.store "Deze hoofdsleutel opslaan">
+
+<!-- labels for keydlg3.xul -->
+<!ENTITY imacros.keydlg3.radio1 "Opgeslagen hoofdsleutel gebruiken">
+<!ENTITY imacros.keydlg3.radio2 "Nieuwe hoofdsleutel ingeven:">
+<!ENTITY imacros.keydlg3.key "/ sleutel opnieuw ingeven:">
+
+<!-- labels for keydlg4.xul -->
+
+<!-- labels for keydlg5.xul -->
+<!ENTITY imacros.keydlg5.re-enter "Voer a.u.b. uw hoofdwachtwoord opnieuw in:">
+
+<!-- labels for keydlg6.xul -->
+<!ENTITY imacros.keydlg6.button.yes "Ja">
+<!ENTITY imacros.keydlg6.button.no "Nee">
+
+<!-- labels for loopwarning.xul -->
+<!ENTITY imacros.loopwarning.title "iMacros waarschuwing">
+<!ENTITY imacros.loopwarning.enter1 "U hebt een macro gestart die LOOP functies bevat met de normale PLAY knop. Dit betekent dat de macro slechts één keer zal draaien. De waarde van de {{!LOOP}} variabele is 1.">
+<!ENTITY imacros.loopwarning.enter2 "U dient de macro te starten met de LOOP knop (niet de PLAY knop) om deze in lussen te draaien.">
+
+<!-- labels for message.xul -->
+<!ENTITY imacros.message.title "Bericht">
+<!ENTITY imacros.message.error "Fout in regel:">
+
+<!-- labels for options.xul -->
+<!ENTITY imacros.window.options "Opties">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "Herhalingssnelheid:">
+<!ENTITY imacros.radio.fast "Snel">
+<!ENTITY imacros.radio.medium "Middel">
+<!ENTITY imacros.radio.slow "Langzaam">
+<!ENTITY imacros.label.or.use.set.r0 "(of gebruik &apos;SET !REPLAYSPEED&apos;)">
+<!ENTITY imacros.label.timeout.limi1 "Tijdslimiet (seconden)">
+<!ENTITY imacros.label.or.use.set.t2 "(of gebruik &apos;SET !TIMEOUT&apos;)">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "Naar object scrollen wanneer dit is gevonden">
+<!ENTITY imacros.checkbox.highlight4 "Object accentueren wanneer dit is gevonden">
+<!ENTITY imacros.options.scripting.settings "Javascript scripting settings">
+<!ENTITY imacros.checkbox.js5 "Javascript weergeven tijdens herhaling">
+<!ENTITY imacros.button.open.click.5 "Klikmoduspaneel openen">
+<!ENTITY imacros.label.master.passw6 "Hoofdwachtwoord voor macro-wachtwoordencryptie (256 bits)">
+<!ENTITY imacros.label.the.master.p7 "Het hoofdwachtwoord wordt gebruikt om alle opgeslagen website-wachtwoorden te versleutelen en decoderen. De website-wachtwoorden worden versleuteld met sterke encryptie en opgeslagen binnen de Internet Macro&apos;s.">
+<!ENTITY imacros.label.do.not.encry9 "Wachtwoorden niet versleutelen.">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "Voer hoofdwachtwoord in">
+<!ENTITY imacros.label.enter.a.tem12 "Voer hier een tijdelijk hoofdwachtwoord in als u het NIET wilt opslaan. U dient dit OPNIEUW IN TE VOEREN wanneer u iMacros opnieuw start en een website-wachtwoord voor de eerste keer gebruikt. Veiliger, maar minder gemakkelijk.">
+<!ENTITY imacros.label.encryption.16 "De versleuteling kan worden gewijzigd in de macro met">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "Map met macro&apos;s:">
+<!ENTITY imacros.label.folder.data17 "Map met databronnen:">
+<!ENTITY imacros.label.folder.down18 "Map met downloads:">
+<!ENTITY imacros.label.logs.events "Gebeurtenissenlogboeken:">
+<!ENTITY imacros.checkbox.use.exte19 "Extern bewerkingsprogramma gebruiken:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.xul -->
+<!ENTITY imacros.window.recorder "iMacros">
+<!ENTITY imacros.menuitem.remove "Verwijderen">
+<!ENTITY imacros.menuitem.rename "Hernoemen">
+<!ENTITY imacros.menuitem.new.folder "Nieuwe map">
+<!ENTITY imacros.menuitem.addbookmark "Aan bladwijzer toevoegen">
+<!ENTITY imacros.treecell.favorites "Favorieten">
+<!ENTITY imacros.button.rename "Hernoemen">
+<!ENTITY imacros.tab.play "Afspelen">
+<!ENTITY imacros.tab.rec "Opnemen">
+<!ENTITY imacros.tab.edit "Bewerken">
+<!ENTITY imacros.button.play "Afspelen">
+<!ENTITY imacros.button.pause "Pauzeren">
+<!ENTITY imacros.button.stop "Stoppen">
+<!ENTITY imacros.label.repeat.macro "Macro herhalen">
+<!ENTITY imacros.label.current "Huidige:">
+<!ENTITY imacros.label.max "Max:">
+<!ENTITY imacros.button.play.loop "Afspelen (lus)">
+<!ENTITY imacros.button.record "Opnemen">
+<!ENTITY imacros.button.save "Save Macro As">
+<!ENTITY imacros.button.saveas "Pagina opslaan als">
+<!ENTITY imacros.button.refresh "Vernieuwen">
+<!ENTITY imacros.button.jump.to "Springen naar">
+<!ENTITY imacros.button.back "Terug">
+<!ENTITY imacros.button.wait.during0 "Wachten tijdens afspelen">
+<!ENTITY imacros.button.del.cache.c1 "Cache &amp; cookies wissen">
+<!ENTITY imacros.button.edit.macro "Macro bewerken">
+<!ENTITY imacros.button.refresh.mac2 "Macrolijst vernieuwen">
+<!ENTITY imacros.button.options "Opties">
+<!ENTITY imacros.label.imacros.for.3 "iMacros voor Firefox">
+<!ENTITY imacros.label.home.page "Startpagina">
+<!ENTITY imacros.label.about.iopus "iMacros Gebruikersforum">
+<!ENTITY imacros.button.options.click "Klikmodus">
+<!ENTITY imacros.button.share.macro "Macro delen">
+
+<!-- labels for save.xul -->
+<!ENTITY imacros.save.title "Bestand opslaan">
+<!ENTITY imacros.save.name "Naam:">
+<!ENTITY imacros.save.create "Aanmaken in:">
+<!ENTITY imacros.save.favorites "Favorieten">
+<!ENTITY imacros.save.bookmark "Bladwijzersdialoogvenster openen">
+
+<!-- labels for share.xul -->
+<!ENTITY imacros.share.title "Deel uw macro&apos;s/scripts - Sociaal scripten">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros kan de volledige macro in een eenvoudige (lange) koppeling opnemen. U kunt deze koppeling op drie manieren gebruiken om de macro/het script te delen:">
+<!ENTITY imacros.share.label.h2 "1. Kopieer de koppeling en plak deze in een e-mailbericht, een blog of een website">
+<!ENTITY imacros.share.label.h3 "Deze koppeling is (num) karakters lang. Als dit te lang is voor het beoogde gebruik, gebruik dan één van de Top Short URL Services">
+<!ENTITY imacros.share.label.h4 "2. Verstuur de macro met behulp van uw e-mailprogramma">
+<!ENTITY imacros.share.label.h5 "3. Voeg de koppeling toe aan een sociaal netwerk">
+
+
+<!-- labels for sidebar.xul -->
+<!ENTITY imacros.sidebar.recorder "Opname">
+<!ENTITY imacros.button.af.local.test "Local Test">
+<!ENTITY imacros.label.af.idrone.test "Test for iDrone">
+<!ENTITY imacros.button.af.online.test "Online Test">
+<!ENTITY imacros.button.af.upload "Upload">
+
+
+<!-- labels for wait.xul -->
+<!ENTITY imacros.wait.title "WAIT parameter">
+<!ENTITY imacros.wait.enter1 "Hoe lang wilt u op deze positie wachten tijdens het afspelen?">
+<!ENTITY imacros.wait.enter2 "Voer a.u.b. de wachttijd in seconden in:">
+<!ENTITY imacros.wait.sec "sec.">
+
+<!-- common labels -->
+<!ENTITY imacros.button.ok "OK">
+<!ENTITY imacros.button.cancel "Annuleren">
+<!ENTITY imacros.checkbox.display.this "Dit bericht de volgende keer weer weergeven">
+<!ENTITY imacros.button.close "Sluiten">
+<!ENTITY imacros.button.help "Help">

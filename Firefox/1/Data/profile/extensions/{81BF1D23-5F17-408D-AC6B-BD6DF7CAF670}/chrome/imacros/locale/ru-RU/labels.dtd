@@ -1,0 +1,200 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.xul -->
+<!ENTITY imacros.alert.title "Записанный диалог-предупреждение">
+
+<!-- labels for bookmark.xul -->
+<!ENTITY imacros.bookmark.title "Создать iMacros-закладку">
+<!ENTITY imacros.bookmark.label.h1 "Тип закладки">
+<!ENTITY imacros.bookmark.label.h2 "Добавить закладку в:">
+<!ENTITY imacros.bookmark.label.h3 "Имя:">
+<!ENTITY imacros.bookmark.label.h4 "URL: ">
+<!ENTITY imacros.bookmark.radio.h1 "Запускать везде: включить макро в url закладки">
+<!ENTITY imacros.bookmark.radio.h2 "Локально: Добавить ссылку на локальный макро">
+<!ENTITY imacros.bookmark.radio.h3 "Добавить в закладки Firefox">
+<!ENTITY imacros.bookmark.radio.h4 "Скопировать в буфер (CTRL+V чтобы вставить ссылки в email)">
+
+
+<!-- labels for clear.xul -->
+<!ENTITY imacros.clear.title "Внимание:">
+<!ENTITY imacros.clear.enter1 "Это очистит кеш FF браузера что включает в себя удаление ВСЕХ Cookies. Вы хотите продолжить?">
+
+
+<!-- labels for clickpanel.xul -->
+<!ENTITY imacros.clickpanel.title "Выбор 'режима клика'">
+<!ENTITY imacros.clickpanel.caption "Выберите как ссылки будут записываться:">
+<!ENTITY imacros.clickpanel.radio1 "Автоматически выбирать лучший режим">
+<!ENTITY imacros.clickpanel.textbox "На некоторых сайтах наилучший режим не может быть выбран автоматически. В этом случае выберите режим вручную:">
+<!ENTITY imacros.clickpanel.radio2 "Использовать имя ссылки (Стандартное, определяет ссылку по ее имени)">
+<!ENTITY imacros.clickpanel.radio3 "Использовать URL ссылки (Используйте данную опцию если две ссылки имеют одинаковое имя)">
+<!ENTITY imacros.clickpanel.radio4 "Использовать полный HTML тег">
+<!ENTITY imacros.clickpanel.radio5 "использовать X/Y позицию (Полезно в случае если URL и имя ссылки каждый раз меняется)">
+
+<!-- labels for confirm.xul -->
+<!ENTITY imacros.confirm.title "Записаный диалог подтверждения">
+
+<!-- labels for edit.xul -->
+<!ENTITY imacros.edit.title "Редактировать шаги">
+
+<!-- labels for error.xul -->
+<!ENTITY imacros.error.title "Ошибка">
+<!ENTITY imacros.error.line "Ошибка в строке:">
+
+<!-- labels for extract.xul -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "Извлеченный текст:">
+<!ENTITY imacros.extract.label.remark "Заметка: Это окно для тестирования. Оно не появится при управлении IM из коммандной строки или скриптового интерфейса. Если хотите запустить макрос вручную, то вы можете отключить это окно добавив SET !EXTRACT_TEST_POPUP NO в ваш макрос">
+
+<!-- labels for goto.xul -->
+<!ENTITY imacros.goto.title "Перейти на новый веб-сайт:">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.xul -->
+<!ENTITY imacros.jsbookmark.radio1 "Запустить">
+<!ENTITY imacros.jsbookmark.radio2 "Только скопировать в #current.js (Вы можете просмотреть файл позже и запустить его вручную).">
+
+<!-- labels for keydlg1.xul -->
+<!ENTITY imacros.keydlg.title "iMacros основной пароль">
+<!ENTITY imacros.keydlg.enter1 "Пожалуйста введите пароль:">
+<!ENTITY imacros.keydlg1.master "Ваш пароль НЕ сохраняется. Он только запоминается на время работы браузера. Учтите, что это не пароль к определенным сайтам, а основной пароль для шифрования и дешифровки паролей.">
+
+<!-- labels for keydlg2.xul -->
+<!ENTITY imacros.keydlg2.re-enter "Повторите ввод здесь:">
+<!ENTITY imacros.keydlg.checkbox.store "Сохранить этот пароль">
+
+<!-- labels for keydlg3.xul -->
+<!ENTITY imacros.keydlg3.radio1 "Использовать сохраненный пароль">
+<!ENTITY imacros.keydlg3.radio2 "Введите новый пароль:">
+<!ENTITY imacros.keydlg3.key " / повторите ввод:">
+
+<!-- labels for keydlg4.xul -->
+
+<!-- labels for keydlg5.xul -->
+<!ENTITY imacros.keydlg5.re-enter "Пожалуйста введите основной пароль еще раз:">
+
+<!-- labels for keydlg6.xul -->
+<!ENTITY imacros.keydlg6.button.yes "Да">
+<!ENTITY imacros.keydlg6.button.no "Нет">
+
+<!-- labels for loopwarning.xul -->
+<!ENTITY imacros.loopwarning.title "iMacros предупреждение">
+<!ENTITY imacros.loopwarning.enter1 "Вы начали проигрывание макроса, содержащего функции LOOP, с помощью кнопки Воспроизвести. Это значит что макрос будет проигран один раз. Значение переменной {{!LOOP}} равно 1.">
+<!ENTITY imacros.loopwarning.enter2 "Вам необходимо начать проигрывание макроса с использованием кнопки Повторить макрос (не кнопка Воспроизвести) для циклического выполнения.">
+
+<!-- labels for message.xul -->
+<!ENTITY imacros.message.title "Сообщение">
+<!ENTITY imacros.message.error "Ошибка в строке:">
+
+<!-- labels for options.xul -->
+<!ENTITY imacros.window.options "Опции">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "Скорость воспроизведения:   ">
+<!ENTITY imacros.radio.fast "Быстро">
+<!ENTITY imacros.radio.medium "Средне">
+<!ENTITY imacros.radio.slow "Медленно">
+<!ENTITY imacros.label.or.use.set.r0 "(или использовать 'SET !REPLAYSPEED')">
+<!ENTITY imacros.label.timeout.limi1 "Временное ограничение (в секундах)">
+<!ENTITY imacros.label.or.use.set.t2 "(или использовать 'SET !TIMEOUT')">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "Скролировать на объект">
+<!ENTITY imacros.checkbox.highlight4 "Подсвечивать объект">
+<!ENTITY imacros.options.scripting.settings "Javascirpt scripting settings">
+<!ENTITY imacros.checkbox.js5 "Показывать Javascript во время проигрывания">
+<!ENTITY imacros.button.open.click.5 "Открыть панель настройки 'режима клика'">
+<!ENTITY imacros.label.master.passw6 "Основной пароль для шифрования паролей макроса (256-бит)">
+<!ENTITY imacros.label.the.master.p7 "Основной пароль используется для шифрования и расшифровки всех паролей сайтов. Пароли с сайтов шифруются с использованием сильного шифрования и хранятся внутри макросов.">
+<!ENTITY imacros.label.do.not.encry9 "Не шифровать пароли.">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "Ввести основной пароль">
+<!ENTITY imacros.label.enter.a.tem12 "Введите здесь временный основной пароль если НЕ хотите хранить его. Вам необходимо повторно вводить его поосле каждого запуска Firefox. Это безопаснее, но менее удобно">
+<!ENTITY imacros.label.encryption.16 "Режим шифрования может быть изменен в макросе при помощи команды">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "Папка макросов: ">
+<!ENTITY imacros.label.folder.data17 "Папка данных:  ">
+<!ENTITY imacros.label.folder.down18 "Папка закачек:  ">
+<!ENTITY imacros.label.logs.events "Лог:  ">
+<!ENTITY imacros.checkbox.use.exte19 "Использовать внеший редактор:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.xul -->
+<!ENTITY imacros.window.recorder "Рекордер">
+<!ENTITY imacros.menuitem.remove "Удалить">
+<!ENTITY imacros.menuitem.rename "Переименовать">
+<!ENTITY imacros.menuitem.new.folder "Новый каталог">
+<!ENTITY imacros.menuitem.addbookmark "Добавить в закладки">
+<!ENTITY imacros.treecell.favorites "Избранное">
+<!ENTITY imacros.button.rename "Переименовать">
+<!ENTITY imacros.tab.play "Воспр.">
+<!ENTITY imacros.tab.rec "Запись">
+<!ENTITY imacros.tab.edit "Редакт.">
+<!ENTITY imacros.button.play "Запуск скриптов.">
+<!ENTITY imacros.button.pause "Пауза">
+<!ENTITY imacros.button.stop "Стоп">
+<!ENTITY imacros.label.repeat.macro "Повторить макрос">
+<!ENTITY imacros.label.current "Текущий:">
+<!ENTITY imacros.label.max "Макс:      ">
+<!ENTITY imacros.button.play.loop "Воспр. (Цикл)">
+<!ENTITY imacros.button.record "Запись">
+<!ENTITY imacros.button.save "Сохранить как...">
+<!ENTITY imacros.button.saveas "Сохр. страницу">
+<!ENTITY imacros.button.refresh "Обновить">
+<!ENTITY imacros.button.jump.to "Перейти">
+<!ENTITY imacros.button.back "Вернуться">
+<!ENTITY imacros.button.wait.during0 "Ждать при воспр.">
+<!ENTITY imacros.button.del.cache.c1 "Удал. кеш&amp;куки">
+<!ENTITY imacros.button.edit.macro "Редактировать">
+<!ENTITY imacros.button.refresh.mac2 "Обновить список">
+<!ENTITY imacros.button.options "Опции">
+<!ENTITY imacros.label.imacros.for.3 "iMacros для Firefox">
+<!ENTITY imacros.label.home.page "Домашняя страница">
+<!ENTITY imacros.label.about.iopus "О iOpus">
+<!ENTITY imacros.button.options.click "Режим клика">
+<!ENTITY imacros.button.share.macro "Поделиться Макро">
+
+<!-- labels for save.xul -->
+<!ENTITY imacros.save.title "Сохранить файл">
+<!ENTITY imacros.save.name "Имя:">
+<!ENTITY imacros.save.create "Создать в:">
+<!ENTITY imacros.save.favorites "Избранное">
+<!ENTITY imacros.save.bookmark "Открыть диалог закладок">
+
+<!-- labels for share.xul -->
+<!ENTITY imacros.share.title "Социальный Скриптинг">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros может сохранить макрос в простую (длинную) ссылку. Вы можете поделиться этим макросом/скриптом тремя способами:">
+<!ENTITY imacros.share.label.h2 "1. Скопировать и вставить эту ссылку в email, блог или веб сайт">
+<!ENTITY imacros.share.label.h3 "Эта ссылка состоит из (num) символов. Если она слишком большая для ваших нужд тогда пожалуйста воспользуйтесь одним из самых популярных сервисов сокращения ссылок">
+<!ENTITY imacros.share.label.h4 "2. Послать макрос используя ваш почтовый клиент">
+<!ENTITY imacros.share.label.h5 "3. Добавить в социальный сервис закладок">
+
+<!-- labels for sidebar.xul -->
+<!ENTITY imacros.sidebar.recorder "Рекордер">
+<!ENTITY imacros.button.af.local.test "Локальный тест">
+<!ENTITY imacros.label.af.idrone.test "Совместимость с iDrone">
+<!ENTITY imacros.button.af.online.test "Онлайн тест">
+<!ENTITY imacros.button.af.upload "Отправить на сервер">
+
+
+<!-- labels for wait.xul -->
+<!ENTITY imacros.wait.title "Параметр ожидания">
+<!ENTITY imacros.wait.enter1 "Как долго вы хотите ждать в данной позиции во время воспроизведения?">
+<!ENTITY imacros.wait.enter2 "Пожалуйста введите время ожидания в секундах:">
+<!ENTITY imacros.wait.sec "сек">
+
+<!-- common labels -->
+<!ENTITY imacros.button.ok "Ok">
+<!ENTITY imacros.button.cancel "Отмена">
+<!ENTITY imacros.checkbox.display.this "Показывать это сообщение в следующий раз">
+<!ENTITY imacros.button.close "Закрыть">
+<!ENTITY imacros.button.help "Помощь">

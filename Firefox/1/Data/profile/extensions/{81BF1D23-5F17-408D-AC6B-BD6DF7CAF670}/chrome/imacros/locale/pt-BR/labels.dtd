@@ -1,0 +1,201 @@
+<!-- All labels used in the iMacros UI -->
+
+<!-- labels for alert.dtd -->
+<!ENTITY imacros.alert.title "Alerta Gravado">
+
+<!-- labels for bookmark.dtd -->
+<!ENTITY imacros.bookmark.title "Criar um Favorito do iMacros">
+<!ENTITY imacros.bookmark.label.h1 "Tipo de favorito">
+<!ENTITY imacros.bookmark.label.h2 "Adicionar favorito para:">
+<!ENTITY imacros.bookmark.label.h3 "Nome:">
+<!ENTITY imacros.bookmark.label.h4 "URL :">
+<!ENTITY imacros.bookmark.radio.h1 "Usar em todos lugares: incluir macro no url do favorito">
+<!ENTITY imacros.bookmark.radio.h2 "Local: Adicionar referencia para a sua macro local">
+<!ENTITY imacros.bookmark.radio.h3 "Adicionar aos favoritos do FireFox">
+<!ENTITY imacros.bookmark.radio.h4 "Copiar para Area de Transferencia (CTRL+V para copiar links para emails)">
+
+
+<!-- labels for clear.dtd -->
+<!ENTITY imacros.clear.title "Aviso:">
+<!ENTITY imacros.clear.enter1 "Isso vai limpar o cache global do navegador FF. Isso inclui deletar TODOS OS COOKIES. Você desejar continuar?">
+
+<!-- labels for clickpanel.dtd -->
+<!ENTITY imacros.clickpanel.title "Selecione o 'Modo de Clique'">
+<!ENTITY imacros.clickpanel.caption "Selecione como ligar uma gravação:">
+<!ENTITY imacros.clickpanel.radio1 "Selecionar o melho modo de clique automaticamente">
+<!ENTITY imacros.clickpanel.textbox "Em algumas paginas a seleção automatica não pode selecionar a melhor opção. Nesse caso selecione a melhor opção manualmente:">
+<!ENTITY imacros.clickpanel.radio2 "Usar o nome do link (Padrão, identifica o link pelo nome visivel)">
+<!ENTITY imacros.clickpanel.radio3 "Usar o link de URL (Use essa opção se dois links tem o mesmo nome)">
+<!ENTITY imacros.clickpanel.radio4 "Usar tag completa de HTM">
+<!ENTITY imacros.clickpanel.radio5 "Usar posição X/Y (Util se o link de URL e o nome estão mudando entre dois replays)">
+
+<!-- labels for confirm.dtd -->
+<!ENTITY imacros.confirm.title "Gravação Confirmada">
+
+<!-- labels for edit.dtd -->
+<!ENTITY imacros.edit.title "Passos de Edição">
+
+<!-- labels for error.dtd -->
+<!ENTITY imacros.error.title "Erro">
+<!ENTITY imacros.error.line "Erro na linha:">
+
+<!-- labels for extract.dtd -->
+<!ENTITY imacros.extract.title "iOpus iMacros">
+<!ENTITY imacros.extract.label.extracted "Texto extraido:">
+<!ENTITY imacros.extract.label.remark "Lembrete: Esse popup é para testes. Ele NÃO aparece quando o IM é controlado pelo Comando de linha or pelo Scripting Interface. Se você quer usar a macro manualmente, você pode desabilitar esse popup adicionando SET !EXTRACT_TEST_POPUP NÃO para a sua macro">
+
+<!-- labels for goto.dtd -->
+<!ENTITY imacros.goto.title "Ir para novo web site">
+<!ENTITY imacros.goto.http "http://">
+
+<!-- labels for jsbookmark.dtd -->
+<!ENTITY imacros.jsbookmark.radio1 "Usar">
+<!ENTITY imacros.jsbookmark.radio2 "Copiar somente para #current.js (Você pode inspecionar o arquivo e usa-lo manualmente).">
+
+<!-- labels for keydlg1.dtd -->
+<!ENTITY imacros.keydlg.title "Senha Mestra do iMacros">
+<!ENTITY imacros.keydlg.enter1 "Por favor entre sua senha mestra :">
+<!ENTITY imacros.keydlg1.master "A senha mestra NÃO está amarzenada. Só está lembrada enquanto o iMacros está ativo. Note que isso não é  a senha para um website especifico, mas a mestra senha para decriptar a senha macro encriptada.">
+
+
+<!-- labels for keydlg2.dtd -->
+<!ENTITY imacros.keydlg2.re-enter "Reinsira sua senha mestra aqui:">
+<!ENTITY imacros.keydlg.checkbox.store "Amarzene essa senha mestra">
+
+<!-- labels for keydlg3.dtd -->
+<!ENTITY imacros.keydlg3.radio1 "Use chave mestra amarzenada">
+<!ENTITY imacros.keydlg3.radio2 "Insira nova chave mestra:">
+<!ENTITY imacros.keydlg3.key " / reinsira a chave:">
+
+<!-- labels for keydlg4.dtd -->
+
+<!-- labels for keydlg5.dtd -->
+<!ENTITY imacros.keydlg5.re-enter "Por favor reinsira sua senha mestra:">
+
+
+<!-- labels for keydlg6.dtd -->
+<!ENTITY imacros.keydlg6.button.yes "Sim">
+<!ENTITY imacros.keydlg6.button.no "Não">
+
+<!-- labels for loopwarning.dtd -->
+<!ENTITY imacros.loopwarning.title "Aviso do iMacros">
+<!ENTITY imacros.loopwarning.enter1 "Você iniciou uma macro que contem funções LOOP com o botão normal de PLAY. Isso significa que a macro só vai rodar uma vez. O valor da variavel {{!LOOP}} é 1.">
+<!ENTITY imacros.loopwarning.enter2 "Você precisa iniciar a macro com o botão LOOP (não o botão PLAY) para ela rodar varias vezes.">
+
+<!-- labels for message.dtd -->
+<!ENTITY imacros.message.title "Messagem">
+<!ENTITY imacros.message.error "Erro na linha:">
+
+<!-- labels for options.dtd -->
+<!ENTITY imacros.window.options "Opções">
+<!ENTITY imacros.options.general "General">
+<!ENTITY imacros.options.security "Security">
+<!ENTITY imacros.options.paths "Paths">
+<!ENTITY imacros.options.shared "Shared scripts">
+<!ENTITY imacros.options.external.editor "External editor">
+<!ENTITY imacros.label.replay.speed "Velocidade do replay:   ">
+<!ENTITY imacros.radio.fast "Rapida">
+<!ENTITY imacros.radio.medium "Media">
+<!ENTITY imacros.radio.slow "Lenta">
+<!ENTITY imacros.label.or.use.set.r0 "(Ou use 'SET !REPLAYSPEED')">
+<!ENTITY imacros.label.timeout.limi1 "Limite de Espera (Segundos)">
+<!ENTITY imacros.label.or.use.set.t2 "(Ou use 'SET !TIMEOUT')">
+<!ENTITY imacros.options.visual.effects "Visual effects">
+<!ENTITY imacros.checkbox.scroll.to3 "Ir ao objeto quando encontrado">
+<!ENTITY imacros.checkbox.highlight4 "Resaltar objeto quando encontrado">
+<!ENTITY imacros.options.scripting.settings "Javascript scripting settings">
+<!ENTITY imacros.checkbox.js5 "Mostrar Javascript durante o replay">
+<!ENTITY imacros.button.open.click.5 "Abrir Painel de Mode de Clique">
+<!ENTITY imacros.label.master.passw6 "Senha Mestra para Encriptação da Senha de Macro (256-Bit)">
+<!ENTITY imacros.label.the.master.p7 "A senha mestra é usado para encriptar e decriptar todas as senhas de websites. O site senhas são encriptadas usando forte encriptações e são armazenadas dentro do iMacros.">
+<!ENTITY imacros.label.do.not.encry9 "Não encriptar senhas.">
+<!ENTITY imacros.label.enter.maste10 "Enter master password here to STORE it in the Firefox Password Manager.">
+<!ENTITY imacros.button.enter.mast11 "Inserir Senha Mestra">
+<!ENTITY imacros.label.enter.a.tem12 "Inserir uma senha mestra temporaria aqui se você NÃO quer armazena-la. Você precisa REINSERIR-la todas as vezes que você iniciar o iMacros e usar uma senha de website pela primeira vez. Mais seguro, mas menos conveniente.">
+<!ENTITY imacros.label.encryption.16 "Encriptação pode ser mudada na macro com">
+<!ENTITY imacros.options.enc.command  "SET !ENCRYPTION NO / STOREDKEY / TMPKEY">
+<!ENTITY imacros.label.folder.macros "Pasta de Macros: ">
+<!ENTITY imacros.label.folder.data17 "Pasta de Fonte de Dados:  ">
+<!ENTITY imacros.label.folder.down18 "Pasta de Downloads:  ">
+<!ENTITY imacros.label.logs.events "Catalogo de Eventos:  ">
+<!ENTITY imacros.checkbox.use.exte19 "Usar editor externo:">
+<!ENTITY imacros.options.more.info "More information about macros and scripts">
+<!ENTITY imacros.options.hotkey "Keyboard Shortcuts">
+<!ENTITY imacros.checkbox.hotkey "Use F8 keyboard shorcut (this will take effect after browser restart)">
+<!-- labels for prompt.xul -->
+<!ENTITY imacros.prompt.title "iMacros Variable">
+
+<!-- labels for rec.dtd -->
+<!ENTITY imacros.window.recorder "iMacros">
+<!ENTITY imacros.menuitem.remove "Remover">
+<!ENTITY imacros.menuitem.rename "Renomear">
+<!ENTITY imacros.menuitem.new.folder "Nova Pasta">
+<!ENTITY imacros.menuitem.addbookmark "Adicionar para os favoritos">
+<!ENTITY imacros.treecell.favorites "  Favoritos">
+<!ENTITY imacros.button.rename "Renomear">
+<!ENTITY imacros.tab.play "Usar">
+<!ENTITY imacros.tab.rec "Gravar">
+<!ENTITY imacros.tab.edit "Editar">
+<!ENTITY imacros.button.play "Usar">
+<!ENTITY imacros.button.pause "Pausar">
+<!ENTITY imacros.button.stop "Parar">
+<!ENTITY imacros.label.repeat.macro "Repetir Macro">
+<!ENTITY imacros.label.current "Atual:">
+<!ENTITY imacros.label.max "Max:      ">
+<!ENTITY imacros.button.play.loop "Usar (Loop)">
+<!ENTITY imacros.button.record "Gravar">
+<!ENTITY imacros.button.save "Save Macro As">
+<!ENTITY imacros.button.saveas "Salvar Pagina Como">
+<!ENTITY imacros.button.refresh "Atualizar">
+<!ENTITY imacros.button.jump.to "Pular para">
+<!ENTITY imacros.button.back "Voltar">
+<!ENTITY imacros.button.wait.during0 "Esperar enquanto Roda">
+<!ENTITY imacros.button.del.cache.c1 "Del. Cache&amp;Cookies">
+<!ENTITY imacros.button.edit.macro "Editar Macro">
+<!ENTITY imacros.button.refresh.mac2 "Atualizar Lista de Macro">
+<!ENTITY imacros.button.options "Opcoes">
+<!ENTITY imacros.label.imacros.for.3 "iMacros para FireFox">
+<!ENTITY imacros.label.home.page "Pagina Inicial">
+<!ENTITY imacros.label.about.iopus "Forum de Usuario do iMacros">
+<!ENTITY imacros.button.options.click "Modo de Clique">
+<!ENTITY imacros.button.share.macro "Compartilhar Macro">
+
+<!-- labels for save.dtd -->
+<!ENTITY imacros.save.title "Salvar ar quivos">
+<!ENTITY imacros.save.name "Nome:">
+<!ENTITY imacros.save.create "Criar em:">
+<!ENTITY imacros.save.favorites "Favoritos">
+<!ENTITY imacros.save.bookmark "Abrir dialogo de favoritos">
+
+<!-- labels for share.dtd -->
+<!ENTITY imacros.share.title "Compartilhar suas Macros/Scripts - Social Scripting">
+<!ENTITY imacros.share.clipboard "Copy to Clipboard">
+<!ENTITY imacros.share.top5url "Short URL Services">
+<!ENTITY imacros.share.email "Email macro">
+<!ENTITY imacros.share.bookmark "Bookmark macro">
+<!ENTITY imacros.share.label.h1 "iMacros pode colocar toda a macro dentro de um simples (longo) link. Você pode usar esse link para compartilhar a macro/script de três maneiras:">
+<!ENTITY imacros.share.label.h2 "1. Copiar e colar esse link dentro de um email, blog ou website">
+<!ENTITY imacros.share.label.h3 "Esse link tem (num) caracteres. Se isso é longo de mais para o que você pretendia usar, por favor use um dos Melhores Serviços de Curtas URL">
+<!ENTITY imacros.share.label.h4 "2. Mandar o macro usando a applicação de email do seu computador">
+<!ENTITY imacros.share.label.h5 "3. Adicionar para um serviço de favoritos sociais">
+
+<!-- labels for sidebar.dtd -->
+<!ENTITY imacros.sidebar.recorder "Gravador">
+<!ENTITY imacros.button.af.local.test "Local Test">
+<!ENTITY imacros.label.af.idrone.test "Test for iDrone">
+<!ENTITY imacros.button.af.online.test "Online Test">
+<!ENTITY imacros.button.af.upload "Upload">
+
+<!-- labels for wait.dtd -->
+<!ENTITY imacros.wait.title "Esperar Parametro">
+<!ENTITY imacros.wait.enter1 "Quanto tempo você quer esperar nessa posição durante o replay?">
+<!ENTITY imacros.wait.enter2 "Por favor insira o tempo de espera em segundos:">
+<!ENTITY imacros.wait.sec "segundos">
+
+<!-- common labels -->
+<!ENTITY imacros.button.ok "Ok">
+<!ENTITY imacros.button.cancel "Cancelar">
+<!ENTITY imacros.checkbox.display.this "Mostrar essa imagem na proxima vez">
+<!ENTITY imacros.button.close "Fechar">
+<!ENTITY imacros.button.help "Ajuda">
+
