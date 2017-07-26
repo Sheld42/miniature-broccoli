@@ -168,9 +168,7 @@
     <Content Include="Data Files\groupsVK.txt" />
     <Content Include="if_star_1054969.ico" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Other\Notepad++\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
