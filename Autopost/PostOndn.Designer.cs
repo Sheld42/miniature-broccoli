@@ -97,6 +97,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "PostOndn";
+            this.Resizable = false;
             this.Text = "License";
             this.Load += new System.EventHandler(this.License_Load);
             this.ResumeLayout(false);

@@ -73,6 +73,16 @@ namespace Autopost.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap крест {
+            get {
+                object obj = ResourceManager.GetObject("крест", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap фон_редактора {
             get {
                 object obj = ResourceManager.GetObject("фон редактора", resourceCulture);

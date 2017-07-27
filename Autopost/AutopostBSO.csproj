@@ -182,6 +182,7 @@
   <ItemGroup>
     <Content Include="if_star_1054969.ico" />
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\крест.png" />
     <None Include="Resources\фон редактора.png" />
     <None Include="Resources\фончик.png" />
     <None Include="Resources\power-button-icon-23.png" />
