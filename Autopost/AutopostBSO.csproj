@@ -48,10 +48,20 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>if_star_1054969.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\converted_file_823b1041.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
+    <Reference Include="MetroFramework, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.RunTime.1.2.0.3\lib\net40-Client\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Design.1.2.0.3\lib\net40\MetroFramework.Design.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.2.0.3, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroFramework.Fonts.1.2.0.3\lib\net40\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Management" />
@@ -67,7 +77,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="AutorizeOdn.cs" />
     <Compile Include="Forms\PostVK.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,11 +108,11 @@
     <Compile Include="Forms\AuthorizeVK.Designer.cs">
       <DependentUpon>AuthorizeVK.cs</DependentUpon>
     </Compile>
-    <Compile Include="License.cs">
+    <Compile Include="PostOndn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="License.Designer.cs">
-      <DependentUpon>License.cs</DependentUpon>
+    <Compile Include="PostOndn.Designer.cs">
+      <DependentUpon>PostOndn.cs</DependentUpon>
     </Compile>
     <Compile Include="Post.cs" />
     <Compile Include="Program.cs" />
@@ -122,8 +132,8 @@
     <EmbeddedResource Include="Forms\Welcome.resx">
       <DependentUpon>Welcome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="License.resx">
-      <DependentUpon>License.cs</DependentUpon>
+    <EmbeddedResource Include="PostOndn.resx">
+      <DependentUpon>PostOndn.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -133,8 +143,10 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
     <None Include="Properties\DataSources\AuthorizeVK.datasource" />
     <None Include="Properties\DataSources\Autopost.Properties.Resources.datasource" />
     <None Include="Properties\DataSources\Autopost.Properties.Settings.datasource" />
@@ -168,8 +180,27 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="if_star_1054969.ico" />
+    <Content Include="Resources\converted_file_823b1041.ico" />
+    <None Include="Resources\письмондрелло.png" />
+    <None Include="Resources\de556b6ba188929021fe7342bb76160b.png" />
+    <None Include="Resources\facebook-transparent-pics-18.png" />
+    <Content Include="Resources\if_star_1054969.ico" />
+    <None Include="Resources\бэк норм.png" />
+    <None Include="Resources\Сенд ит.png" />
+    <None Include="Resources\далее1.png" />
+    <None Include="Resources\далее.png" />
+    <None Include="Resources\делете_.png" />
+    <None Include="Resources\бака.png" />
+    <None Include="Resources\делете.png" />
+    <None Include="Resources\обозри.png" />
+    <None Include="Resources\и сохрани.png" />
+    <None Include="Resources\спис гру.png" />
+    <None Include="Resources\крест.png" />
+    <None Include="Resources\фон редактора.png" />
+    <None Include="Resources\фончик.png" />
+    <None Include="Resources\power-button-icon-23.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

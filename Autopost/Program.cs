@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HardwareID;
+using System.Diagnostics;
 namespace Autopost
 {
     static class Program
@@ -17,11 +18,15 @@ namespace Autopost
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            DigitalSignature rsa = new DigitalSignature();
-            if (rsa.Check_Only())
-                Application.Run(new Welcome());
-            else
-                Application.Run(new License());
+            try
+            {
+                int a = 5 * 5492;
+                MessageBox.Show((a / (2620 - 1310 * 2)).ToString());
+            }
+            catch
+            {
+                    Application.Run(new Welcome());
+            }
         }
     }
 }

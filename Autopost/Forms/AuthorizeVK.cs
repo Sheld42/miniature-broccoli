@@ -8,10 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost
 {
-    public partial class AuthorizeVK : Form
+    public partial class AuthorizeVK : MetroForm
     {
         public AuthorizeVK()
         {
