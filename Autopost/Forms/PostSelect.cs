@@ -233,5 +233,14 @@ namespace Autopost
 
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Posts.Clear();
+            Welcome newForm = new Welcome();
+            this.Hide();
+            newForm.ShowDialog();
+            this.Close();
+        }
     }
 }

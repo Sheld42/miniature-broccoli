@@ -56,14 +56,18 @@
             // 
             // button2
             // 
+            this.button2.BackgroundImage = global::Autopost.Properties.Resources.power_button_icon_23;
             resources.ApplyResources(this.button2, "button2");
+            this.button2.FlatAppearance.BorderSize = 0;
             this.button2.Name = "button2";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
+            this.button3.FlatAppearance.BorderSize = 0;
             resources.ApplyResources(this.button3, "button3");
+            this.button3.ForeColor = System.Drawing.SystemColors.Control;
             this.button3.Name = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);

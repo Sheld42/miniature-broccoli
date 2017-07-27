@@ -15,7 +15,6 @@ namespace Autopost
     
     public partial class Welcome : MetroForm
     {
-        public List<Post> Posts { get; set; }
 
         public Welcome()
         {
