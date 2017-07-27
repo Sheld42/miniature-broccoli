@@ -183,7 +183,15 @@ namespace Autopost
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
 
-        Process.Start("Notepad++\\notepad++.exe", "groupsVK.txt");
+            try
+            {
+                Process.Start("Notepad++\\notepad++.exe", "groupsVK.txt");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при открытии файла групп.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            
         }
 
         private void button4_Click(object sender, EventArgs e)      //Кнопка Авторизация

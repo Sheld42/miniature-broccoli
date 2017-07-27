@@ -63,6 +63,26 @@ namespace Autopost.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap de556b6ba188929021fe7342bb76160b {
+            get {
+                object obj = ResourceManager.GetObject("de556b6ba188929021fe7342bb76160b", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap facebook_transparent_pics_18 {
+            get {
+                object obj = ResourceManager.GetObject("facebook-transparent-pics-18", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap power_button_icon_23 {
             get {
                 object obj = ResourceManager.GetObject("power-button-icon-23", resourceCulture);
@@ -156,6 +176,16 @@ namespace Autopost.Properties {
         internal static System.Drawing.Bitmap обозри {
             get {
                 object obj = ResourceManager.GetObject("обозри", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap письмондрелло {
+            get {
+                object obj = ResourceManager.GetObject("письмондрелло", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

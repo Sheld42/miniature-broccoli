@@ -48,7 +48,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>if_star_1054969.ico</ApplicationIcon>
+    <ApplicationIcon>Resources\converted_file_823b1041.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup />
   <ItemGroup>
@@ -180,8 +180,11 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="if_star_1054969.ico" />
-    <Content Include="MetroFramework.txt" />
+    <Content Include="Resources\converted_file_823b1041.ico" />
+    <None Include="Resources\письмондрелло.png" />
+    <None Include="Resources\de556b6ba188929021fe7342bb76160b.png" />
+    <None Include="Resources\facebook-transparent-pics-18.png" />
+    <Content Include="Resources\if_star_1054969.ico" />
     <None Include="Resources\бэк норм.png" />
     <None Include="Resources\Сенд ит.png" />
     <None Include="Resources\далее1.png" />
