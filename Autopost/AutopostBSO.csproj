@@ -182,6 +182,16 @@
   <ItemGroup>
     <Content Include="if_star_1054969.ico" />
     <Content Include="MetroFramework.txt" />
+    <None Include="Resources\бэк норм.png" />
+    <None Include="Resources\Сенд ит.png" />
+    <None Include="Resources\далее1.png" />
+    <None Include="Resources\далее.png" />
+    <None Include="Resources\делете_.png" />
+    <None Include="Resources\бака.png" />
+    <None Include="Resources\делете.png" />
+    <None Include="Resources\обозри.png" />
+    <None Include="Resources\и сохрани.png" />
+    <None Include="Resources\спис гру.png" />
     <None Include="Resources\крест.png" />
     <None Include="Resources\фон редактора.png" />
     <None Include="Resources\фончик.png" />
