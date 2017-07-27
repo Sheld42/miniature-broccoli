@@ -18,7 +18,6 @@ namespace Autopost
            
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            kek rt = new kek();
             try
             {
                 int a = 5 * 5492;
@@ -26,19 +25,7 @@ namespace Autopost
             }
             catch
             {
-                Stopwatch time = new Stopwatch();
-                time.Reset();
-                time.Start();
-                if (rt.regmem())
-                {
-                    time.Stop();
-                    if (5000 < time.ElapsedMilliseconds)
-                     Application.Run(new PostOndn()); 
-                    else
-                        Application.Run(new Welcome());
-                }
-                else
-                    Application.Run(new PostOndn());
+                    Application.Run(new Welcome());
             }
         }
     }

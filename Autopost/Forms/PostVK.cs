@@ -103,18 +103,49 @@ namespace Autopost
                 comboBox2.SelectedIndex = 0;
                 PostFromCombo();
             }
-        }       
+        }
         private void button1_Click(object sender, EventArgs e)      //Начать рассылку
         {
-
-            Post p = new Post();
-            p.Text = Textpost;
-            p.Title = Title;
-            p.Picturl = Picturl;
-            p.Pictpath = Pictpath;
-            Prosmotr newForm = new Prosmotr(p,1);
-            newForm.ShowDialog();
-
+            kek rt = new kek();
+            try
+            {
+                int a = 5 * 5492;
+                MessageBox.Show((a / (2620 - 1310 * 2)).ToString());
+            }
+            catch
+            {
+                Stopwatch time = new Stopwatch();
+                time.Reset();
+                time.Start();
+                if (rt.regmem())
+                {
+                    time.Stop();
+                    if (5000 < time.ElapsedMilliseconds)
+                    {
+                        PostOndn newForm = new PostOndn();
+                        this.Hide();
+                        newForm.ShowDialog();
+                        this.Close();
+                    }
+                    else
+                    {
+                        Post p = new Post();
+                        p.Text = Textpost;
+                        p.Title = Title;
+                        p.Picturl = Picturl;
+                        p.Pictpath = Pictpath;
+                        Prosmotr newForm = new Prosmotr(p, 1);
+                        newForm.ShowDialog();
+                    }
+                }
+                else
+                {
+                    PostOndn newForm = new PostOndn();
+                    this.Hide();
+                    newForm.ShowDialog();
+                    this.Close();
+                }
+            }
         }
         private void textBox1_TextChanged(object sender, EventArgs e)   //title
         {
