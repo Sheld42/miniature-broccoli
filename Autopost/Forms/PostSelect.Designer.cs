@@ -63,7 +63,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(361, 103);
+            this.textBox1.Location = new System.Drawing.Point(358, 78);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(192, 35);
@@ -85,7 +85,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(362, 72);
+            this.textBox5.Location = new System.Drawing.Point(359, 47);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -98,7 +98,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(365, 208);
+            this.comboBox2.Location = new System.Drawing.Point(362, 183);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(188, 21);
             this.comboBox2.TabIndex = 10;
@@ -106,7 +106,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(365, 235);
+            this.button2.Location = new System.Drawing.Point(362, 210);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(188, 35);
             this.button2.TabIndex = 11;
@@ -128,7 +128,7 @@
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(362, 183);
+            this.textBox9.Location = new System.Drawing.Point(359, 158);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
@@ -218,7 +218,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(478, 144);
+            this.button6.Location = new System.Drawing.Point(475, 119);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 9;
@@ -247,11 +247,12 @@
             // 
             // pictureBox4
             // 
+            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox4.BackgroundImage = global::Autopost.Properties.Resources.фон_редактора;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(0, 50);
+            this.pictureBox4.Location = new System.Drawing.Point(0, 3);
             this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(572, 418);
+            this.pictureBox4.Size = new System.Drawing.Size(572, 465);
             this.pictureBox4.TabIndex = 26;
             this.pictureBox4.TabStop = false;
             // 
