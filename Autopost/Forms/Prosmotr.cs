@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using MetroFramework.Components;
+using MetroFramework.Components.;
 using MetroFramework.Forms;
 namespace Autopost.Forms
 {
@@ -28,6 +28,7 @@ namespace Autopost.Forms
         public string FinText { get; set; }
         public string FinPic { get; set; }
         public int VK { get; set; }
+        public int NumLines { get; set; }
         public Prosmotr()
         {
             InitializeComponent();
@@ -63,7 +64,16 @@ namespace Autopost.Forms
                 FinPic = p.Pictpath;
                 FinText = FinText.Replace("\r\n", "\\n");
             }
-           
+            StreamReader fs = new StreamReader(datasource);
+            string s = "";
+            NumLines = 0;
+            while (s != null)
+            {
+                s = fs.ReadLine();
+                if (s!="" && s != null)
+                    NumLines += 1;
+            }
+
         }
         private void button2_Click(object sender, EventArgs e)
         {
