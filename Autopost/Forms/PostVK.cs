@@ -240,12 +240,21 @@ namespace Autopost
             }
         }
 
-        private void button5_Click_1(object sender, EventArgs e)
+        private void button5_Click_1(object sender, EventArgs e)        //Кнопа "в меню"
         {
             Welcome newForm = new Welcome();
             this.Hide();
             newForm.ShowDialog();
             this.Close();
+        }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)        //ctrl + A
+        {
+            if (e.KeyData == (Keys.Control | Keys.A))
+            {
+                textBox4.SelectAll();
+                e.Handled = e.SuppressKeyPress = true;
+            }
         }
     }
 }

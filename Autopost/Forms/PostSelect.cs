@@ -250,5 +250,15 @@ namespace Autopost
         {
             this.Close();
         }
+
+        private void textBox4_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == (Keys.Control | Keys.A))
+            {
+                textBox4.SelectAll();
+                //убираем звуковое сопровождение при нажатии клавиш
+                e.Handled = e.SuppressKeyPress = true;
+            }
+        }
     }
 }
