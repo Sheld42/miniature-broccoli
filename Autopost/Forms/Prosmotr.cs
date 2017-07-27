@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-using MetroFramework.Components.;
+using MetroFramework.Components;
 using MetroFramework.Forms;
 namespace Autopost.Forms
 {
