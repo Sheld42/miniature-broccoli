@@ -112,6 +112,7 @@ namespace Autopost
             p.Title = Title;
             p.Picturl = Picturl;
             p.Pictpath = Pictpath;
+
             Prosmotr newForm = new Prosmotr(p, 1);
             newForm.ShowDialog();
 

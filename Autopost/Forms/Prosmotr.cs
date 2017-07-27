@@ -42,7 +42,8 @@ namespace Autopost.Forms
             InitializeComponent();
             FinText = p.Text; //+ System.Environment.NewLine; //+ p.Picturl;
             textBox1.Text = FinText;
-            
+
+
             
 
             if (VK == 1)
@@ -82,6 +83,13 @@ namespace Autopost.Forms
         }
         private void button1_Click(object sender, EventArgs e)
         {
+            Process[] Fifa = Process.GetProcessesByName("Firefox");
+            if (Fifa.Count() > 0)
+            {
+                MessageBox.Show("Закройте Firefox для продолжения");
+                return;
+            }
+
             kek rt = new kek();
             try
             {
@@ -105,6 +113,18 @@ namespace Autopost.Forms
                     }
                     else
                     {
+                        StreamReader fs = new StreamReader(datasource);
+                        string s = "";
+                        NumLines = 0;
+                        while (s != null)
+                        {
+                            s = fs.ReadLine();
+                            if (s != "" && s != null)
+                                NumLines += 1;
+                        }
+                        fs.Close();
+
+                        string jscode = "var conf = new Array(); conf['cycle'] =" +NumLines.ToString() + "; for (var cycle = 1; cycle <= conf['cycle']; cycle++) { iimSet(\"cycle\", cycle); iimPlay(\"script\")}";
                         string Imac_text;
                         if (VK == 1)                        //VK
                         {
@@ -121,8 +141,8 @@ namespace Autopost.Forms
                                 "SET !VAR7 EVAL(\"var random=Math.floor(Math.random()*2 + 15); random;\")" + System.Environment.NewLine +
                                 "SET !DATASOURCE \"" + datasource + "\"" + System.Environment.NewLine +
                                 "SET !DATASOURCE_COLUMNS 3" + System.Environment.NewLine +
-                                "SET !LOOP 1 " + System.Environment.NewLine +
-                                "SET !DATASOURCE_LINE {{!LOOP}}" + System.Environment.NewLine +
+                                //"SET !LOOP 1 " + System.Environment.NewLine +
+                                "SET !DATASOURCE_LINE {{cycle}}" + System.Environment.NewLine +
                                 "WAIT SECONDS={{!VAR8}}" + System.Environment.NewLine +
                                 "URL GOTO={{!COL1}}" + System.Environment.NewLine +
                                 "EVENT TYPE = CLICK SELECTOR=\"#post_field\" BUTTON=0" + System.Environment.NewLine +
@@ -144,10 +164,13 @@ namespace Autopost.Forms
                                 "WAIT SECONDS = 9" + System.Environment.NewLine +
                                 "TAG POS=1 TYPE=BUTTON ATTR=ID:send_post" + System.Environment.NewLine;
 
-                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\VK.iim", string.Empty, Encoding.UTF8);
-                            File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\VK.iim", Imac_text);
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.js", string.Empty, Encoding.UTF8);
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.js", jscode);
+
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.iim", string.Empty, Encoding.UTF8);
+                            File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.iim", Imac_text);
                             System.Threading.Thread.Sleep(1300);
-                            Process.Start("Firefox\\1\\FirefoxPortable.exe", "imacros://run/?m=VK.iim");
+                            Process.Start("Firefox\\1\\FirefoxPortable.exe", "imacros://run/?m=script.js");
 
 
 
@@ -179,8 +202,8 @@ namespace Autopost.Forms
                             "SET !VAR7 EVAL(\"var random=Math.floor(Math.random()*2 + 15); random;\")" + System.Environment.NewLine +
                             "SET !DATASOURCE \"" + datasource + "\"" + System.Environment.NewLine +
                             "SET !DATASOURCE_COLUMNS 3" + System.Environment.NewLine +
-                            "SET !LOOP " + "1" + System.Environment.NewLine +
-                            "SET !DATASOURCE_LINE {{!LOOP}}" + System.Environment.NewLine +
+                            //"SET !LOOP " + "1" + System.Environment.NewLine +
+                            "SET !DATASOURCE_LINE {{cycle}}" + System.Environment.NewLine +
                             "WAIT SECONDS={{!VAR8}}" + System.Environment.NewLine +
                             "URL GOTO={{!COL1}}" + System.Environment.NewLine +
                             "WAIT SECONDS = {{!VAR7}}" + System.Environment.NewLine +
@@ -198,10 +221,13 @@ namespace Autopost.Forms
 
                             //MessageBox.Show(Imac_text);
 
-                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", string.Empty, Encoding.UTF8);
-                            File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\face.iim", Imac_text);
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.js", string.Empty, Encoding.UTF8);
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.js", jscode);
+
+                            File.WriteAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.iim", string.Empty, Encoding.UTF8);
+                            File.AppendAllText("Firefox\\1\\Data\\profile\\iMacros\\Macros\\script.iim", Imac_text);
                             System.Threading.Thread.Sleep(1300);
-                            Process.Start("Firefox\\1\\FirefoxPortable.exe", "imacros://run/?m=face.iim");
+                            Process.Start("Firefox\\1\\FirefoxPortable.exe", "imacros://run/?m=script.js");
                         }
                     }
                 }
