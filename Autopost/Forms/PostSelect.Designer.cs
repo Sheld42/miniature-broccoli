@@ -201,6 +201,7 @@
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox8.Location = new System.Drawing.Point(23, 398);
