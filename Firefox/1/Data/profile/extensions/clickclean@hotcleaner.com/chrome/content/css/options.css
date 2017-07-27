@@ -1,0 +1,58 @@
+/* // MIT, Extension for Firefox 4+ Browser - Click&Clean - HOTCLEANER.COM - Vlad and Serge Strukoff */
+*{margin:0;padding:0;outline:0;white-space:nowrap;position:absolute}
+input[type=checkbox]{left:13px;width:14px;height:14px;-moz-appearance:none}
+#page{width:379px;height:575px;font:normal 14px/140% Helvetica,Arial,sans-serif;color:rgb(50,84,110);background-color:rgb(199,226,253)}
+.box-cap{color:rgb(1,108,145);font:bold 16px Helvetica, Arial, sans-serif;text-indent:28px;left:5px;top:5px}
+#san-cap{background:url(../img/icon16.png) 4px 2px no-repeat;text-decoration:underline;cursor:pointer}
+#ext-cap{background:url(../img/ext16.png) 4px 2px no-repeat}
+#adv-cap{background:url(../img/tools16.png) 4px 2px no-repeat}
+.box{position:relative;width:360px;margin:0 10px 6px;background-color:#fff;background-image:-moz-linear-gradient(#fff 20%,#cbe0fd);background-image:linear-gradient(#fff 20%,#cbe0fd);border:1px solid;border-color:#9fb4c8 #8393a3 #7d868f;-moz-border-radius:5px;border-radius:5px;-moz-box-shadow:inset 0 0 0 1px rgba(255,255,255,.3), 0 1px 3px #7383b3;box-shadow:inset 0 0 0 1px rgba(255,255,255,.3), 0 1px 3px #7383b3}
+#box0{height:50px;margin-top:10px}
+#box1{height:165px}
+#box2{height:175px}
+#box3{height:106px}
+button{width:90px;height:24px;font:bold 13px Helvetica,Arial,sans-serif;background-color:#eff7fe;background-image:-moz-linear-gradient(#fff 20%,#cbe0fd);background-image:linear-gradient(#fff 20%,#cbe0fd);border:1px solid rgb(156,188,227);-moz-border-radius:3px;border-radius:3px;cursor:pointer}
+button:enabled:hover{border-color:#80b3ff #59f #59f;background-color:#acf;background-image:-moz-linear-gradient(#fff,#acf);background-image:linear-gradient(#fff,#acf)}
+button:enabled:active{margin-top:1px}
+button:disabled{opacity:.65;color:#676767;cursor:default}
+#san-enabled{top:33px}
+#san-enabled-desc{left:33px;top:30px}
+#san-close{top:56px}
+#san-close-desc{left:33px;top:53px;width:320px;overflow:hidden}
+#san-ask{top:80px}
+#san-ask-desc{left:33px;top:77px}
+#san-time-desc{left:13px;top:102px}
+#san-time{left:286px;top:103px;width:65px;border:1px solid #b3b3b3;z-index:999}
+#san-clear{right:10px;top:130px;width:150px}
+#ext-sanitize{left:13px;top:33px;width:14px;height:14px}
+#ext-sanitize-desc{left:33px;top:30px}
+#ext-close{top:56px}
+#ext-close-desc{left:33px;top:53px;width:320px;overflow:hidden}
+#ext-path-desc{left:13px;top:83px}
+#ext-arg-desc{left:13px;top:113px}
+#ext-path,#ext-arg{left:93px;height:18px;padding:4px 4px 2px;border:1px solid rgb(156,188,227);-moz-border-radius:5px;border-radius:5px;font:bold 13px Helvetica,Arial,sans-serif}
+#ext-path{top:80px;width:210px}
+#ext-browse{left:318px;top:80px;width:32px}
+#ext-arg{top:110px;width:248px}
+#ext-run{right:10px;top:140px;width:150px}
+#adv-lso{top:33px}
+#adv-lso-desc{left:33px;top:30px}
+#adv-tabs{top:56px}
+#adv-tabs-desc{left:33px;top:53px}
+#adv-tab{left:36px;top:81px}
+#adv-tab-desc{left:56px;top:78px}
+#adv-tab:disabled,#adv-tab:disabled+#adv-tab-desc{opacity:.65}
+#opt-def,#opt-ok,#opt-cancel{top:540px}
+#opt-def{left:10px}
+#opt-cancel{left:182px}
+#opt-ok{left:280px}
+.bt0{display:block;top:1px;width:89px;height:48px;font-size:13px;color:#000;-moz-border-radius:5px;border-radius:5px}
+#home{left:1px}
+#fb{left:91px}
+#tw{left:181px}
+#contact{left:270px}
+.bt0 img{top:-11px;left:16px;width:56px;height:56px;border:0;-moz-transform:scale(.5);transform:scale(.5);-moz-transition:ease-out .15s;transition:ease-out .15s}
+.bt0 b{display:block;top:31px;left:1px;width:89px;text-align:center;overflow:hidden}
+.bt0:hover{background-color:#373737;background-image:-moz-linear-gradient(#515151 50%,#373737 50%);background-image:linear-gradient(#515151 50%,#373737 50%)}
+.bt0:hover img{-moz-transform:scale(1);transform:scale(1)}
+.bt0:hover b{display:none}

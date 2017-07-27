@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE toolbarbutton SYSTEM "chrome://clickclean/locale/clickclean.dtd">
+<?xml-stylesheet href="chrome://clickclean/skin/clickclean.css" type="text/css"?>
+
+<!-- Extension for Firefox 4+ Browser - Click&Clean - HOTCLEANER.COM - Vlad and Serge Strukoff -->
+
+<overlay id="clickcleanOverlay" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://clickclean/content/js/clickclean.js" /> 
+  <toolbar id="BrowserToolbarPalette">
+    <toolbarbutton id="clickclean-button" type="menu-button" class="toolbarbutton-1" label="Cleaner" tooltiptext="&toolbar.button;" oncommand="clickClean.onCmd(event);">
+      <menupopup id="clickclean-menu" onpopupshowing="clickClean.onPopupShowing(event)">
+        <menuitem value="1" class="menuitem-iconic" image="chrome://clickclean/skin/icon16.png" label="&erase;" key="ccKey1" />
+        <menuitem value="2" class="menuitem-iconic" image="chrome://clickclean/skin/atabs16.png" label="&tab-act;" tooltiptext="&tab-act.title;" key="ccKey2" />
+        <menuitem value="3" class="menuitem-iconic" image="chrome://clickclean/skin/tabs16.png" label="&tab-new;" tooltiptext="&tab-new.title;" key="ccKey3" />
+        <menuseparator/>
+        <menuitem value="4" class="menuitem-iconic" image="chrome://clickclean/skin/inco16.png" label="&incognito;" key="ccKey4"/>
+        <menuitem value="5" class="menuitem-iconic" image="chrome://clickclean/skin/test16.png" label="&ptest;" />
+        <menuseparator/>
+        <menuitem value="6" class="menuitem-iconic" image="chrome://clickclean/skin/cache16.png" label="&cache;"/>
+        <menuitem value="7" class="menuitem-iconic" image="chrome://clickclean/skin/cook16.png" label="&cookie;"/>
+        <menuitem value="8" class="menuitem-iconic" image="chrome://clickclean/skin/perm16.png" label="&perms;"/>
+        <menuseparator/>
+        <menuitem value="9" class="menuitem-iconic" image="chrome://clickclean/skin/tools16.png" label="&prefs;" />
+        <menuseparator/>
+        <menuitem value="10" class="menuitem-iconic" image="chrome://clickclean/skin/help16.png" label="&support;" />
+        <menuitem value="11" class="menuitem-iconic" image="chrome://clickclean/skin/info16.png" label="&about;" />
+      </menupopup>
+    </toolbarbutton>      
+  </toolbar>
+  <keyset>
+    <key id="ccKey1" modifiers="alt" key="C" oncommand="clickClean.onKey(event)"/>
+    <key id="ccKey2" modifiers="alt" key="L" oncommand="clickClean.onKey(event)"/>
+    <key id="ccKey3" modifiers="alt" key="N" oncommand="clickClean.onKey(event)"/>
+    <key id="ccKey4" modifiers="alt" key="I" oncommand="clickClean.onKey(event)"/>
+  </keyset>  
+</overlay>

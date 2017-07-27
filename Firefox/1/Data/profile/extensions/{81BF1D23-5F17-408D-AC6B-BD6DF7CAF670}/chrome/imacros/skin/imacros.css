@@ -1,0 +1,157 @@
+@namespace url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
+
+
+#imacros-toggle-button {
+    list-style-image: url("chrome://imacros/skin/toolbarbutton_big.png");
+    -moz-image-region: rect(0px, 24px, 24px, 0px);
+}
+
+#imacros-toggle-button:hover {
+    list-style-image: url("chrome://imacros/skin/toolbarbutton_big.png");
+    -moz-image-region: rect(0px, 48px, 24px, 24px);
+}
+
+
+
+toolbar[iconsize="small"] #imacros-toggle-button {
+    list-style-image: url("chrome://imacros/skin/toolbarbutton_small.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+toolbar[iconsize="small"] #imacros-toggle-button:hover {
+    list-style-image: url("chrome://imacros/skin/toolbarbutton_small.png");
+    -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+
+
+/* Panel */
+
+
+#imacros-info-panel {
+    padding: 5px;
+}
+
+#imacros-info-panel-logo {
+    background-image: url("chrome://imacros/skin/logo_32x32.png");
+    background-repeat: no-repeat;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+#imacros-info-panel-status2[state="waiting"] {
+    color: #0000ff;
+}
+
+#imacros-info-panel-status2[state="loading"] {
+    color: #ff0000;
+}
+
+
+#imacros-info-panel-button-box {
+    margin: 5px;
+}
+
+#imacros-info-panel-stop-button {
+    list-style-image: url("chrome://imacros/skin/stop_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-info-panel-play-button {
+    list-style-image: url("chrome://imacros/skin/play_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-info-panel-record-button {
+    list-style-image: url("chrome://imacros/skin/record_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+
+#imacros-info-panel-pause-button[icon="play"] {
+    list-style-image: url("chrome://imacros/skin/play_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-info-panel-pause-button[icon="record"] {
+    list-style-image: url("chrome://imacros/skin/record_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-info-panel-pause-button[icon="pause"] {
+    list-style-image: url("chrome://imacros/skin/pause_16x16.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-info-panel-stop-button:hover,
+#imacros-info-panel-pause-button:hover,
+#imacros-info-panel-play-button:hover,
+#imacros-info-panel-record-button:hover {
+    -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+
+
+#imacros-messages {
+    border-color: #aaaaaa;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border-width: thin;
+    border-style: solid;
+}
+
+#imacros-message-box {
+    background-color: #a8ffab;
+    font-size: smaller;
+    padding: 5px !important;
+}
+
+#imacros-message-box[msgtype="error"] {
+    background-color: #ffffe1;
+    /* background-color: #ffebeb; */
+    /* color: red; */
+}
+
+
+#imacros-message-box-container {
+    /* margin: -5px; */
+    /* border-width: thin; */
+    /* border-style: solid; */
+    /* border-color: #aaaaaa; */
+}
+
+#imacros-message-box-buttons-container {
+    /* border: 1px solid red; */
+    -moz-box-pack: center;
+}
+
+#imacros-message-box-button-close {
+    list-style-image: url("chrome://imacros/skin/close.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-message-box-button-close:hover {
+    -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+
+#imacros-message-box-button-help {
+    list-style-image: url("chrome://imacros/skin/help.png");
+    margin-right: 5px;
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-message-box-button-help:hover {
+    -moz-image-region: rect(0px, 32px, 16px, 16px);    
+}
+
+#imacros-message-box-button-edit {
+    list-style-image: url("chrome://imacros/skin/edit.png");
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+
+#imacros-message-box-button-edit:hover {
+    -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+
+

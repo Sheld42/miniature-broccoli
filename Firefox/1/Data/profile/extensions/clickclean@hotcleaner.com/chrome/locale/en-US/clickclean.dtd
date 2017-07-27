@@ -1,0 +1,16 @@
+<!ENTITY toolbar.button "Сlear Browsing Data">
+<!ENTITY erase "Сlear Browsing Data">
+<!ENTITY tab-act "Close Other Tabs">
+<!ENTITY tab-act.title "Close all windows and tabs, but keep last active tab">
+<!ENTITY tab-new "Close All Tabs">
+<!ENTITY tab-new.title "Close all windows and tabs and open a new blank tab">
+<!ENTITY incognito "Incognito">
+<!ENTITY ptest "Privacy Test">
+
+<!ENTITY cache "Cache Viewer">
+<!ENTITY cookie "Cookies">
+<!ENTITY perms "Permissions">
+
+<!ENTITY prefs "Preferences...">
+<!ENTITY support "Support">
+<!ENTITY about "About">
