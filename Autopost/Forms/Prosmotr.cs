@@ -10,13 +10,14 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using System.Diagnostics;
-
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost.Forms
 {
     
 
 
-    public partial class Prosmotr : Form
+    public partial class Prosmotr : MetroForm
     {
 
         public string datasource { get; set; }

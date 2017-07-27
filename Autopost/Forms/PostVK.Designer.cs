@@ -51,7 +51,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(403, 298);
+            this.button1.Location = new System.Drawing.Point(409, 336);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 66);
             this.button1.TabIndex = 12;
@@ -61,7 +61,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(327, 43);
+            this.textBox1.Location = new System.Drawing.Point(333, 81);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(192, 35);
@@ -71,7 +71,7 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(52, 237);
+            this.textBox3.Location = new System.Drawing.Point(47, 310);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(202, 20);
             this.textBox3.TabIndex = 3;
@@ -79,7 +79,7 @@
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 85);
+            this.textBox4.Location = new System.Drawing.Point(7, 158);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
@@ -89,8 +89,9 @@
             // 
             // textBox5
             // 
+            this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox5.Location = new System.Drawing.Point(327, 17);
+            this.textBox5.Location = new System.Drawing.Point(333, 55);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.ReadOnly = true;
@@ -103,7 +104,7 @@
             // comboBox2
             // 
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(327, 158);
+            this.comboBox2.Location = new System.Drawing.Point(333, 196);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(188, 21);
             this.comboBox2.TabIndex = 10;
@@ -111,7 +112,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(327, 205);
+            this.button2.Location = new System.Drawing.Point(333, 243);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(188, 35);
             this.button2.TabIndex = 11;
@@ -121,7 +122,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(92, 341);
+            this.button3.Location = new System.Drawing.Point(87, 414);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(119, 23);
             this.button3.TabIndex = 7;
@@ -131,8 +132,9 @@
             // 
             // textBox9
             // 
+            this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(324, 133);
+            this.textBox9.Location = new System.Drawing.Point(330, 171);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
@@ -144,7 +146,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(92, 26);
+            this.button4.Location = new System.Drawing.Point(87, 99);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(119, 23);
             this.button4.TabIndex = 1;
@@ -154,9 +156,11 @@
             // 
             // textBox10
             // 
+            this.textBox10.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox10.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox10.Location = new System.Drawing.Point(52, 4);
+            this.textBox10.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.textBox10.Location = new System.Drawing.Point(47, 77);
             this.textBox10.Multiline = true;
             this.textBox10.Name = "textBox10";
             this.textBox10.ReadOnly = true;
@@ -168,9 +172,10 @@
             // 
             // textBox11
             // 
+            this.textBox11.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox11.Location = new System.Drawing.Point(52, 58);
+            this.textBox11.Location = new System.Drawing.Point(47, 131);
             this.textBox11.Multiline = true;
             this.textBox11.Name = "textBox11";
             this.textBox11.ReadOnly = true;
@@ -182,9 +187,10 @@
             // 
             // textBox6
             // 
+            this.textBox6.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox6.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox6.Location = new System.Drawing.Point(52, 194);
+            this.textBox6.Location = new System.Drawing.Point(47, 267);
             this.textBox6.Multiline = true;
             this.textBox6.Name = "textBox6";
             this.textBox6.ReadOnly = true;
@@ -196,9 +202,10 @@
             // 
             // textBox2
             // 
+            this.textBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox2.Location = new System.Drawing.Point(52, 214);
+            this.textBox2.Location = new System.Drawing.Point(47, 287);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
@@ -210,9 +217,10 @@
             // 
             // textBox8
             // 
+            this.textBox8.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox8.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox8.Location = new System.Drawing.Point(52, 321);
+            this.textBox8.Location = new System.Drawing.Point(47, 394);
             this.textBox8.Multiline = true;
             this.textBox8.Name = "textBox8";
             this.textBox8.ReadOnly = true;
@@ -224,7 +232,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(92, 263);
+            this.pictureBox1.Location = new System.Drawing.Point(87, 336);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(135, 52);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -233,7 +241,7 @@
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(443, 84);
+            this.button6.Location = new System.Drawing.Point(449, 122);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 9;
@@ -245,7 +253,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 369);
+            this.ClientSize = new System.Drawing.Size(576, 452);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBox8);
@@ -263,12 +271,10 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(200, 200);
             this.MaximizeBox = false;
             this.Name = "Autopost_Post_Window1";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Подготовка поста";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

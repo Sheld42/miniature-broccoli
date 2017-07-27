@@ -8,9 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using HardwareID;
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost
 {
-    public partial class PostOndn : Form
+    public partial class PostOndn : MetroForm
     {
         public PostOndn()
         {

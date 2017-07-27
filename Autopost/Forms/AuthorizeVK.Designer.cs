@@ -60,12 +60,10 @@
             this.ClientSize = new System.Drawing.Size(161, 159);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Location = new System.Drawing.Point(200, 200);
             this.MaximizeBox = false;
             this.Name = "AuthorizeVK";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FB";
             this.ResumeLayout(false);
 

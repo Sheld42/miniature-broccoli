@@ -13,10 +13,11 @@ using System.Runtime.CompilerServices;
 using Autopost.Forms;
 using System.Diagnostics;
 using HardwareID;
-
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost
 {
-    public partial class Autopost_Post_Window1 : Form, INotifyPropertyChanged
+    public partial class Autopost_Post_Window1 : MetroForm, INotifyPropertyChanged
     {
         private string _title;
         public string Title

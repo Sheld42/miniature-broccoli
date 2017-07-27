@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost
 {
     
     
-    public partial class Welcome : Form
+    public partial class Welcome : MetroForm
     {
         public List<Post> Posts { get; set; }
 

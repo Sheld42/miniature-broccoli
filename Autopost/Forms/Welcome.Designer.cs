@@ -47,7 +47,7 @@
             // 
             // textBox1
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.textBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
             resources.ApplyResources(this.textBox1, "textBox1");
             this.textBox1.ForeColor = System.Drawing.SystemColors.ControlText;
@@ -72,14 +72,15 @@
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.SystemColors.Control;
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.Name = "Welcome";
+            this.Resizable = false;
+            this.Style = MetroFramework.MetroColorStyle.Blue;
+            this.Theme = MetroFramework.MetroThemeStyle.Light;
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -12,10 +12,11 @@ using System.Runtime.Serialization.Json;
 using System.Runtime.CompilerServices;
 using Autopost.Forms;
 using System.Diagnostics;
-
+using MetroFramework.Components;
+using MetroFramework.Forms;
 namespace Autopost
 {
-    public partial class PostSelect : Form, INotifyPropertyChanged
+    public partial class PostSelect : MetroForm, INotifyPropertyChanged
     {
         public string CurrDir { get; set; }
         private string _title;
@@ -56,6 +57,7 @@ namespace Autopost
             textBox1.Text = p.Title;
             textBox4.Text = p.Text;
             pictureBox1.ImageLocation = p.Pictpath;
+            Pictpath = p.Pictpath;  // Ю
             //textBox3.Text = p.Picturl;
 
         }
