@@ -68,41 +68,49 @@ namespace Autopost
         }
         private void SaveToJson()          //Сохранение в джсон на локал диск
         {
-            File.WriteAllText("PostsVK.json", string.Empty);
-            DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
-            using (FileStream fs = new FileStream("PostsVK.json", FileMode.OpenOrCreate))
+            try
             {
-                jsonFormatter.WriteObject(fs, Posts.ToArray());
+                File.WriteAllText("PostsVK.json", string.Empty);
+                DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
+                using (FileStream fs = new FileStream("PostsVK.json", FileMode.OpenOrCreate))
+                {
+                    jsonFormatter.WriteObject(fs, Posts.ToArray());
+                }
             }
+            catch { MessageBox.Show("Ошибка обработки файла PostsVK.json", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         private void LoadPosts()            //Загрузка постов из джсон
         {
-            Posts.Clear();
-            DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
-            using (FileStream fs = new FileStream("PostsVK.json", FileMode.OpenOrCreate))
+            try
             {
-                Post[] newpost = (Post[])jsonFormatter.ReadObject(fs);
-                foreach (Post p in newpost)
+                Posts.Clear();
+                DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
+                using (FileStream fs = new FileStream("PostsVK.json", FileMode.OpenOrCreate))
                 {
-                    Posts.Add(p);
+                    Post[] newpost = (Post[])jsonFormatter.ReadObject(fs);
+                    foreach (Post p in newpost)
+                    {
+                        Posts.Add(p);
+                    }
+                }
+                comboBox2.Items.Clear();
+                while (comboBox2.Items.Count > 0)
+                    comboBox2.Items.RemoveAt(0);
+                Post empty = new Post();
+                empty.Text = "";
+                empty.Pictpath = "";
+                empty.Title = "";
+                empty.Picturl = "";
+                comboBox2.Items.Add(empty);
+                foreach (Post p in Posts)
+                    comboBox2.Items.Add(p);
+                if (Posts.Count > 0)
+                {
+                    comboBox2.SelectedIndex = 0;
+                    PostFromCombo();
                 }
             }
-            comboBox2.Items.Clear();
-            while (comboBox2.Items.Count > 0)
-                comboBox2.Items.RemoveAt(0);
-            Post empty = new Post();
-            empty.Text = "";
-            empty.Pictpath = "";
-            empty.Title = "";
-            empty.Picturl = "";
-            comboBox2.Items.Add(empty);
-            foreach (Post p in Posts)
-                comboBox2.Items.Add(p);
-            if (Posts.Count > 0)
-            {
-                comboBox2.SelectedIndex = 0;
-                PostFromCombo();
-            }
+            catch { MessageBox.Show("Ошибка загрузки постов из файла PostsVK.json", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error); }
         }
         private void button1_Click(object sender, EventArgs e)      //Начать рассылку
         {
@@ -175,15 +183,6 @@ namespace Autopost
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
 
-            //MessageBox.Show(testo.getUniqueID(""));
-
-
-
-            //initialize the select query with command text
-            //testo.comp();
-
-
-
         Process.Start("Notepad++\\notepad++.exe", "groupsVK.txt");
         }
 
@@ -195,8 +194,9 @@ namespace Autopost
             }
             catch
             {
-                MessageBox.Show("Ошибка при открытии Firefox");
+                MessageBox.Show("Ошибка при открытии Firefox", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+            
         }
 
         private void button5_Click(object sender, EventArgs e)      //Кнопка Обзор картинки на компе
@@ -212,7 +212,7 @@ namespace Autopost
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка прикрепления изображения");
+                    MessageBox.Show("Ошибка прикрепления изображения", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -234,7 +234,7 @@ namespace Autopost
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка при сохранении. Проверьте поля ввода.");
+                    MessageBox.Show("Ошибка при сохранении. Проверьте поля ввода.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }

@@ -78,11 +78,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(100, 150);
+            this.label4.Location = new System.Drawing.Point(133, 150);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(162, 13);
+            this.label4.Size = new System.Drawing.Size(101, 13);
             this.label4.TabIndex = 5;
-            this.label4.Text = "YaNeZnayuKak@Svyazatsa.exx";
+            this.label4.Text = "sheld42@yandex.ru";
             // 
             // PostOndn
             // 

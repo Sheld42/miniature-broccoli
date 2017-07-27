@@ -86,6 +86,7 @@
             // 
             this.textBox5.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.textBox5.Location = new System.Drawing.Point(353, 54);
             this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
@@ -109,11 +110,12 @@
             // 
             this.textBox9.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.textBox9.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox9.Location = new System.Drawing.Point(353, 150);
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.textBox9.Location = new System.Drawing.Point(352, 150);
             this.textBox9.Multiline = true;
             this.textBox9.Name = "textBox9";
             this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(191, 19);
+            this.textBox9.Size = new System.Drawing.Size(202, 19);
             this.textBox9.TabIndex = 12;
             this.textBox9.TabStop = false;
             this.textBox9.Text = "Список ранее созданных постов";
@@ -181,11 +183,11 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(144, 4);
+            this.label1.Location = new System.Drawing.Point(139, 5);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(276, 18);
+            this.label1.Size = new System.Drawing.Size(314, 18);
             this.label1.TabIndex = 28;
-            this.label1.Text = "Создание контента для рассылки";
+            this.label1.Text = "Окно настройки параметров рассылки";
             // 
             // textBox10
             // 

@@ -66,7 +66,7 @@ namespace Autopost
         {
             Post NewPost = new Post();
             NewPost.Title = Title;
-            NewPost.Text =Textpost;
+            NewPost.Text = Textpost;
             NewPost.Picturl = Picturl;
             NewPost.Pictpath = Pictpath;
 
@@ -74,54 +74,90 @@ namespace Autopost
         }
         private void SaveToJson()          //Сохранение в джсон на локал диск
         {
-            File.WriteAllText("Posts.json", string.Empty);
-            DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
-            using (FileStream fs = new FileStream("posts.json", FileMode.OpenOrCreate))
+            try
             {
-                jsonFormatter.WriteObject(fs, Posts.ToArray());
+                File.WriteAllText("Posts.json", string.Empty);
+                DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
+                using (FileStream fs = new FileStream("posts.json", FileMode.OpenOrCreate))
+                {
+                    jsonFormatter.WriteObject(fs, Posts.ToArray());
+                }
+
+            }
+            catch
+            {
+
+                MessageBox.Show("Не удается открыть файл posts.json", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
         private void LoadPosts()
         {
-            Posts.Clear();
-            DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
-            using (FileStream fs = new FileStream("posts.json", FileMode.OpenOrCreate))
+            try
             {
-                Post[] newpost = (Post[])jsonFormatter.ReadObject(fs);
-                foreach (Post p in newpost)
+                Posts.Clear();
+                DataContractJsonSerializer jsonFormatter = new DataContractJsonSerializer(typeof(Post[]));
+                using (FileStream fs = new FileStream("posts.json", FileMode.OpenOrCreate))
                 {
-                    Posts.Add(p);
+                    try
+                    {
+
+
+                        Post[] newpost = (Post[])jsonFormatter.ReadObject(fs);
+                        foreach (Post p in newpost)
+                        {
+                            Posts.Add(p);
+                        }
+                    }
+                    catch
+                    {
+
+                        MessageBox.Show("Не удается открыть файл posts.json", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                comboBox2.Items.Clear();
+                while (comboBox2.Items.Count > 0)
+                    comboBox2.Items.RemoveAt(0);
+                Post empty = new Post();
+                empty.Text = "";
+                empty.Pictpath = "";
+                empty.Title = "";
+                empty.Picturl = "";
+                comboBox2.Items.Add(empty);
+                foreach (Post p in Posts)
+                    comboBox2.Items.Add(p);
+                if (Posts.Count > 0)
+                {
+                    comboBox2.SelectedIndex = 0;
+                    PostFromCombo();
                 }
             }
-            comboBox2.Items.Clear();
-            while (comboBox2.Items.Count > 0)
-                comboBox2.Items.RemoveAt(0);
-            Post empty = new Post();
-            empty.Text = "";
-            empty.Pictpath = "";
-            empty.Title = "";
-            empty.Picturl = "";
-            comboBox2.Items.Add(empty);
-            foreach (Post p in Posts)
-                comboBox2.Items.Add(p);
-            if (Posts.Count > 0)
+            catch
             {
-                comboBox2.SelectedIndex = 0;
-                PostFromCombo();
-            }
-        }       //Загрузка постов из джсон
-        private void button1_Click(object sender, EventArgs e)      //Начать рассылку
-        {
 
-            
-             Post p = new Post();
-             p.Text = Textpost;
-             p.Title = Title;
-             p.Picturl = Picturl;
-             p.Pictpath = Pictpath;
-             Prosmotr newForm = new Prosmotr(p, 0);
-             newForm.ShowDialog();
-          
+                MessageBox.Show("Ошибка при загрузке сохраненных постов", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+        }       //Загрузка постов из джсон
+        private void button1_Click(object sender, EventArgs e)      //Препросмотр
+        {
+            try
+            {
+                Post p = new Post();
+                p.Text = Textpost;
+                p.Title = Title;
+                p.Picturl = Picturl;
+                p.Pictpath = Pictpath;
+                Prosmotr newForm = new Prosmotr(p, 0);
+                newForm.ShowDialog();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка создания окна предпросмотра", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+
+
 
         }
         private void textBox1_TextChanged(object sender, EventArgs e)   //title
@@ -130,7 +166,7 @@ namespace Autopost
         }
         private void textBox4_TextChanged(object sender, EventArgs e)   //text
         {
-           Textpost = textBox4.Text;
+            Textpost = textBox4.Text;
         }
         private void textBox2_TextChanged(object sender, EventArgs e)   //picpath
         {
@@ -148,17 +184,28 @@ namespace Autopost
                 //   MessageBox.Show("Ошибка прикрепления изображения");
             }
         }
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)  //Загрузка поста из комбо
         {
-            PostFromCombo();
-        }   //Загрузка поста из комбо
+
+
+            try
+            {
+                PostFromCombo();
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при открытии Firefox", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
+
+        }
         private void button2_Click(object sender, EventArgs e)
         {
         }
         private void button2_Click_1(object sender, EventArgs e)        //Кнопка Удаление поста
         {
             Post Selected = new Post();
-            Selected = Posts.Where(post => string.Equals(post.Text,Textpost)).FirstOrDefault();
+            Selected = Posts.Where(post => string.Equals(post.Text, Textpost)).FirstOrDefault();
             try
             {
                 Posts.Remove(Selected);
@@ -180,18 +227,27 @@ namespace Autopost
 
         private void button3_Click_1(object sender, EventArgs e)    //Кнопка Список групп
         {
-            Process.Start("Notepad++\\notepad++.exe", "groupsFace.txt");
+
+            try
+            {
+                Process.Start("Notepad++\\notepad++.exe", "groupsFace.txt");
+            }
+            catch
+            {
+                MessageBox.Show("Ошибка при открытии файла групп.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void button4_Click(object sender, EventArgs e)      //Кнопка Авторизация
         {
+            //Process.Start("Firefox\\1\\FirefoxPortable.exe", "www.facebook.com");
             try
             {
-                Process.Start("Firefox\\1\\FirefoxPortable.exe", "www.facebook.com");
+
             }
             catch
             {
-                MessageBox.Show("Ошибка при открытии Firefox");
+                MessageBox.Show("Ошибка при открытии Firefox", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -208,7 +264,7 @@ namespace Autopost
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка прикрепления изображения");
+                    MessageBox.Show("Ошибка прикрепления изображения", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -217,8 +273,8 @@ namespace Autopost
         private void button6_Click(object sender, EventArgs e)      //Кнопка Сохранение поста
         {
             Post Selected = new Post();
-            Selected = Posts.Where(post => string.Equals(post.Text,Textpost)).FirstOrDefault();
-            if (!Posts.Any(post => string.Equals(post.Text,Textpost) && string.Equals(post.Title, Title) && string.Equals(post.Picturl, Picturl) && string.Equals(post.Pictpath, Pictpath)))
+            Selected = Posts.Where(post => string.Equals(post.Text, Textpost)).FirstOrDefault();
+            if (!Posts.Any(post => string.Equals(post.Text, Textpost) && string.Equals(post.Title, Title) && string.Equals(post.Picturl, Picturl) && string.Equals(post.Pictpath, Pictpath)))
             {
                 try
                 {
@@ -231,7 +287,7 @@ namespace Autopost
                 }
                 catch
                 {
-                    MessageBox.Show("Ошибка при сохранении. Проверьте поля ввода.");
+                    MessageBox.Show("Ошибка при сохранении. ", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
 
             }
@@ -256,7 +312,6 @@ namespace Autopost
             if (e.KeyData == (Keys.Control | Keys.A))
             {
                 textBox4.SelectAll();
-                //убираем звуковое сопровождение при нажатии клавиш
                 e.Handled = e.SuppressKeyPress = true;
             }
         }
